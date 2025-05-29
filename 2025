@@ -1,0 +1,147 @@
+<!-- Event Overview Section -->
+<section class="py-16 px-6 md:px-16 bg-white">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-[#2B3A67] mb-10">イベント概要</h2>
+    <div class="overflow-x-auto">
+      <table class="w-full text-left border border-gray-200">
+        <tbody>
+          <tr class="border-b">
+            <th class="p-4 font-semibold bg-[#FAFAFA] w-1/3">日時</th>
+            <td class="p-4">2025年6月30日（月）15:00〜19:00（19:00〜交流会）</td>
+          </tr>
+          <tr class="border-b">
+            <th class="p-4 font-semibold bg-[#FAFAFA]">会場</th>
+            <td class="p-4">GMOインターネットグループ 第２本社 GMO Yours・フクラス（渋谷）</td>
+          </tr>
+          <tr class="border-b">
+            <th class="p-4 font-semibold bg-[#FAFAFA]">参加費</th>
+            <td class="p-4">無料（事前申込制）</td>
+          </tr>
+          <tr class="border-b">
+            <th class="p-4 font-semibold bg-[#FAFAFA]">主催</th>
+            <td class="p-4">株式会社ベイコスメティックス、GMOペイメント 他（予定）</td>
+          </tr>
+          <tr>
+            <th class="p-4 font-semibold bg-[#FAFAFA]">来場対象</th>
+            <td class="p-4">化粧品メーカー、D2Cブランド、開発責任者、マーケター、バイヤー、投資家など</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Speakers Section -->
+<section class="py-16 px-6 md:px-16 bg-[#FAFAFA]">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#2B3A67] mb-10">登壇者紹介</h2>
+    <p class="text-lg text-gray-600 mb-12">現在、豪華登壇者を調整中です。情報は近日公開予定です。</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+        <div class="w-24 h-24 bg-gray-300 rounded-full mb-4"></div>
+        <h3 class="text-xl font-semibold mb-1">Coming Soon</h3>
+        <p class="text-sm text-gray-500">登壇者情報をお楽しみに</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+        <div class="w-24 h-24 bg-gray-300 rounded-full mb-4"></div>
+        <h3 class="text-xl font-semibold mb-1">Coming Soon</h3>
+        <p class="text-sm text-gray-500">登壇者情報をお楽しみに</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+        <div class="w-24 h-24 bg-gray-300 rounded-full mb-4"></div>
+        <h3 class="text-xl font-semibold mb-1">Coming Soon</h3>
+        <p class="text-sm text-gray-500">登壇者情報をお楽しみに</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Session Highlights Section -->
+<section class="py-16 px-6 md:px-16 bg-white">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#2B3A67] mb-10">セッションハイライト</h2>
+    <p class="text-lg text-gray-600 mb-12">業界の第一線で活躍するスピーカーによる、多彩なセッションを予定しています。</p>
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="bg-[#FAFAFA] rounded-lg shadow-md p-6 text-left">
+        <h3 class="text-xl font-semibold text-[#2B3A67] mb-2">Coming Soon</h3>
+        <p class="text-gray-600">セッション内容は現在準備中です。近日中に公開いたします。</p>
+      </div>
+      <div class="bg-[#FAFAFA] rounded-lg shadow-md p-6 text-left">
+        <h3 class="text-xl font-semibold text-[#2B3A67] mb-2">Coming Soon</h3>
+        <p class="text-gray-600">セッション内容は現在準備中です。近日中に公開いたします。</p>
+      </div>
+      <div class="bg-[#FAFAFA] rounded-lg shadow-md p-6 text-left">
+        <h3 class="text-xl font-semibold text-[#2B3A67] mb-2">Coming Soon</h3>
+        <p class="text-gray-600">セッション内容は現在準備中です。近日中に公開いたします。</p>
+      </div>
+      <div class="bg-[#FAFAFA] rounded-lg shadow-md p-6 text-left">
+        <h3 class="text-xl font-semibold text-[#2B3A67] mb-2">Coming Soon</h3>
+        <p class="text-gray-600">セッション内容は現在準備中です。近日中に公開いたします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Exhibition Area Section -->
+<section class="py-16 px-6 md:px-16 bg-[#FAFAFA]">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#2B3A67] mb-10">展示・体験ゾーン</h2>
+    <p class="text-lg text-gray-600 mb-12">各業界のプロフェッショナルが集結。展示ブースでは、商品企画や流通にまつわる最新ソリューションを体験できます。</p>
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="bg-white rounded-lg shadow-md p-6 text-left">
+        <h3 class="text-xl font-semibold text-[#2B3A67] mb-2">OEM & 処方開発</h3>
+        <p class="text-gray-600">売れる処方・トレンド成分・試作相談など、製品開発を加速する展示が揃います。</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-md p-6 text-left">
+        <h3 class="text-xl font-semibold text-[#2B3A67] mb-2">決済・ECソリューション</h3>
+        <p class="text-gray-600">オンライン購入導線やD2C支援ツールの最新事例を実機で体験可能。</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-md p-6 text-left">
+        <h3 class="text-xl font-semibold text-[#2B3A67] mb-2">SNS・インフルエンサー施策</h3>
+        <p class="text-gray-600">TikTokライブやUGC施策の成功事例を展示。クリエイティブ支援の相談も歓迎。</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-md p-6 text-left">
+        <h3 class="text-xl font-semibold text-[#2B3A67] mb-2">物流・コールドチェーン</h3>
+        <p class="text-gray-600">コスメ専用温度帯配送の仕組みや、出荷フロー効率化のヒントを体験。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Registration CTA Section -->
+<section id="register" class="py-16 px-6 md:px-16 bg-white text-center">
+  <div class="max-w-2xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#2B3A67] mb-6">参加申し込み</h2>
+    <p class="text-lg text-gray-600 mb-8">参加をご希望の方は、以下のボタンよりGoogleフォームにてお申し込みください（リンク準備中）。</p>
+    <a href="#" class="bg-[#FF6B6B] text-white px-8 py-4 rounded-full text-lg shadow-lg hover:bg-red-500 transition cursor-not-allowed" onclick="return false;">申し込みフォーム準備中</a>
+  </div>
+</section>
+
+<!-- Access Section -->
+<section class="py-16 px-6 md:px-16 bg-[#FAFAFA]">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#2B3A67] mb-10">アクセス</h2>
+    <p class="text-lg text-gray-600 mb-6">会場は渋谷駅から徒歩1分、アクセス良好な「渋谷フクラス」内のGMO Yoursセミナールームにて開催します。</p>
+    <div class="mb-6">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5973093832223!2d139.6983828152582!3d35.65917248019995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5b12f6e141%3A0x926d478dc49f0e6b!2z44CSMTUwLTAwNA!5e0!3m2!1sja!2sjp!4v1716940000000"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p class="text-md text-gray-700">〒150-0043 東京都渋谷区道玄坂1丁目2番3号 渋谷フクラス 16階</p>
+    <p class="text-md text-gray-700">JR「渋谷駅」西口より徒歩1分 / 東京メトロ「渋谷駅」B5出口直結</p>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-[#2B3A67] text-white py-10 px-6 md:px-16">
+  <div class="max-w-5xl mx-auto text-center">
+    <p class="text-sm md:text-base mb-4">主催：株式会社ベイコスメティックス</p>
+    <p class="text-sm md:text-base mb-4">お問い合わせ：info@baycosme.co.jp</p>
+    <div class="flex justify-center gap-6 mb-6">
+      <a href="#" class="hover:opacity-75" aria-label="Instagram"><svg class="w-6 h-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.4.4.6.2 1.1.5 1.6 1 .5.5.8 1 .9 1.6.2.5.3 1.2.4 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.4-.2.6-.5 1.1-1 1.6-.5.5-1 .8-1.6.9-.5.2-1.2.3-2.4.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.4-.4-.6-.2-1.1-.5-1.6-1-.5-.5-.8-1-.9-1.6-.2-.5-.3-1.2-.4-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.4.2-.6.5-1.1 1-1.6.5-.5 1-.8 1.6-.9.5-.2 1.2-.3 2.4-.4C8.4 2.2 8.8 2.2 12 2.2M12 0C8.7 0 8.3 0 7 0 5.7 0 4.9 0 4.1.1 3.2.2 2.5.4 1.8.7c-.7.3-1.3.8-1.8 1.4-.6.5-1 .9-1.3 1.6C-.4 4.9-.6 5.7-.7 6.6-.8 7.4-.8 8.3-.8 12s0 4.6.1 5.4c.1.9.3 1.6.6 2.3.3.7.8 1.3 1.4 1.8.5.6 1 .9 1.6 1.3.7.3 1.4.5 2.3.6.8.1 1.7.1 5.4.1s4.6 0 5.4-.1c.9-.1 1.6-.3 2.3-.6.7-.3 1.3-.8 1.8-1.4.6-.5.9-1 .9-1.6.3-.7.5-1.4.6-2.3.1-.8.1-1.7.1-5.4s0-4.6-.1-5.4c-.1-.9-.3-1.6-.6-2.3-.3-.7-.8-1.3-1.4-1.8-.5-.6-1-.9-1.6-1.3-.7-.3-1.4-.5-2.3-.6-.8-.1-1.7-.1-5.4-.1z"/><circle cx="12" cy="12" r="3.2"/><circle cx="18.4" cy="5.6" r="1.2"/></svg></a>
+      <a href="#" class="hover:opacity-75" aria-label="X (Twitter)"><svg class="w-6 h-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M461.1 64.2c-1.5 3.4-3.2 6.8-5.1 10.1-21.3 36.4-54.2 74.1-99.8 112.9-44.7 37.9-84.6 64.4-119.6 79.5-1.4.6-2.6 1.1-3.6 1.6l.4.3c48.6-6.1 87.5-13.4 116.8-21.9-27.6 36.8-67.5 73.5-119.5 110.2-53.2 37.1-111.6 64.4-175.2 82C56.4 441 42 443.8 32 448c71.8-30.2 137.6-73.3 197.4-129.2C299.4 225.3 359 143 384.5 72.6c3.2-9 5.3-15.3 6.5-18.9 4.2-12.3-7.8-14.4-14.3-9.5-26.7 19.8-56.3 38.3-88.7 55.3-32.6 17.1-63.3 29.7-92.1 38C129 96 153.6 78.3 185.7 61.6c32.2-16.8 64.7-27.1 97.6-30.8 32.9-3.7 67.6.3 104 12.3 13.8 4.7 24.4 10.8 32 18.1z"/></svg></a>
+      <a href="#" class="hover:opacity-75" aria-label="LinkedIn"><svg class="w-6 h-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zm-46.44-341a53.74 53.74 0 1 1 53.74-53.73 53.73 53.73 0 0 1-53.73 53.73zM447.9 448h-92.4V302.4c0-34.7-.7-79.2-48.2-79.2-48.3 0-55.7 37.7-55.7 76.6V448h-92.4V148.9h88.7v40.8h1.3c12.4-23.5 42.6-48.2 87.7-48.2 93.8 0 111.1 61.8 111.1 142.3V448z"/></svg></a>
+    </div>
+    <p class="text-xs">&copy; 2025 BAY COSMETICS Co., Ltd. All rights reserved.</p>
+  </div>
+</footer>
