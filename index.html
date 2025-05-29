@@ -1,59 +1,80 @@
-<!-- 内容省略：ここまで既存コード -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXT COSMETIC DAY 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', 'Noto Sans JP', sans-serif;
+    }
+    section {
+      scroll-margin-top: 100px;
+    }
+  </style>
+</head>
+<body class="bg-[#f9f9fb] text-gray-800">
 
-<!-- Speakers Section -->
-<section id="speakers" class="bg-[#f9f9fb] py-20 px-6">
+<!-- Header -->
+<header class="fixed top-0 w-full z-50 bg-white shadow-sm">
+  <div class="max-w-screen-xl mx-auto px-4 py-3 flex justify-between items-center">
+    <div class="text-xl font-bold text-[#2B3A67]">NEXT COSMETIC DAY</div>
+    <nav class="space-x-4 text-sm">
+      <a href="#concept" class="text-gray-700 hover:text-[#FF6B6B]">イベント概要</a>
+      <a href="#speakers" class="text-gray-700 hover:text-[#FF6B6B]">登壇者</a>
+      <a href="#sessions" class="text-gray-700 hover:text-[#FF6B6B]">セッション</a>
+      <a href="#exhibition" class="text-gray-700 hover:text-[#FF6B6B]">展示体験</a>
+      <a href="#register" class="text-white bg-[#FF6B6B] px-4 py-2 rounded-full hover:bg-red-500 transition">参加申込</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="bg-gradient-to-b from-white to-[#f0f2f7] pt-32 pb-24 text-center px-4">
+  <div class="max-w-screen-md mx-auto">
+    <h1 class="text-4xl md:text-5xl font-bold text-[#2B3A67] mb-4">NEXT COSMETIC DAY 2025（仮）</h1>
+    <p class="text-xl md:text-2xl mb-4">一歩先の化粧品トレンドを“体感”できる<br>オフラインカンファレンス</p>
+    <p class="text-lg mb-2">🗓️ 2025年6月30日（月）15:00–19:00（19:00〜交流会）</p>
+    <p class="text-lg mb-6">📍 GMOインターネットグループ 第２本社（渋谷フクラス 16F）</p>
+    <a href="#register" class="inline-block bg-[#FF6B6B] text-white text-lg font-semibold px-8 py-3 rounded-full shadow hover:bg-red-500 transition">無料で参加登録</a>
+  </div>
+</section>
+
+<!-- CTA Mid Banner -->
+<section class="bg-[#2B3A67] text-white py-8">
+  <div class="max-w-screen-md mx-auto text-center">
+    <p class="text-xl font-semibold mb-3">この1日で、業界の“次”が見える。</p>
+    <a href="#register" class="inline-block bg-white text-[#2B3A67] font-bold px-6 py-2 rounded-full hover:opacity-90 transition">参加申し込みはこちら</a>
+  </div>
+</section>
+
+<!-- Sessions Section -->
+<section id="sessions" class="bg-white py-20 px-6">
   <div class="max-w-screen-lg mx-auto">
-    <h2 class="text-3xl font-bold text-[#2B3A67] text-center mb-12">登壇者紹介</h2>
-    <div class="grid md:grid-cols-3 gap-8 text-center">
-      <div class="bg-white p-6 rounded-xl shadow-md">
-        <div class="w-24 h-24 mx-auto bg-gray-300 rounded-full mb-4"></div>
-        <h3 class="font-bold text-lg text-[#2B3A67]">Coming Soon</h3>
-        <p class="text-sm text-gray-500">登壇者情報は近日公開予定です。</p>
+    <h2 class="text-3xl font-bold text-[#2B3A67] text-center mb-12">セッションタイムテーブル</h2>
+    <div class="grid gap-8 md:grid-cols-2">
+      <div class="border-l-4 border-[#FF6B6B] pl-6">
+        <p class="text-sm text-gray-500">15:00–15:45</p>
+        <h3 class="text-xl font-bold text-[#2B3A67] mt-1">生成AIで“売れる処方”をつくる（仮）</h3>
+        <p class="text-sm mt-1">Usutaku氏（AI開発YouTuber）</p>
       </div>
-      <div class="bg-white p-6 rounded-xl shadow-md">
-        <div class="w-24 h-24 mx-auto bg-gray-300 rounded-full mb-4"></div>
-        <h3 class="font-bold text-lg text-[#2B3A67]">Coming Soon</h3>
-        <p class="text-sm text-gray-500">登壇者情報は近日公開予定です。</p>
+      <div class="border-l-4 border-[#FF6B6B] pl-6">
+        <p class="text-sm text-gray-500">15:50–16:30</p>
+        <h3 class="text-xl font-bold text-[#2B3A67] mt-1">皮膚科医が見る“次に来る”成分（仮）</h3>
+        <p class="text-sm mt-1">小林智子先生（皮膚科医/YouTuber）</p>
       </div>
-      <div class="bg-white p-6 rounded-xl shadow-md">
-        <div class="w-24 h-24 mx-auto bg-gray-300 rounded-full mb-4"></div>
-        <h3 class="font-bold text-lg text-[#2B3A67]">Coming Soon</h3>
-        <p class="text-sm text-gray-500">登壇者情報は近日公開予定です。</p>
+      <div class="border-l-4 border-[#FF6B6B] pl-6">
+        <p class="text-sm text-gray-500">16:35–17:15</p>
+        <h3 class="text-xl font-bold text-[#2B3A67] mt-1">TikTokライブコマース成功事例（仮）</h3>
+        <p class="text-sm mt-1">SNSマーケティング企業登壇予定</p>
+      </div>
+      <div class="border-l-4 border-[#FF6B6B] pl-6">
+        <p class="text-sm text-gray-500">17:20–18:00</p>
+        <h3 class="text-xl font-bold text-[#2B3A67] mt-1">D2C物流の裏側と失敗学（仮）</h3>
+        <p class="text-sm mt-1">佐川または日通 担当者（予定）</p>
       </div>
     </div>
   </div>
 </section>
-
-<!-- Exhibition Section -->
-<section id="exhibition" class="bg-white py-20 px-6">
-  <div class="max-w-screen-lg mx-auto">
-    <h2 class="text-3xl font-bold text-[#2B3A67] text-center mb-12">展示・体験ゾーン</h2>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-[#f9f9fb] p-6 rounded-xl shadow-sm">
-        <h3 class="text-xl font-semibold text-[#2B3A67] mb-2">OEM & 処方開発</h3>
-        <p class="text-sm text-gray-600">トレンド成分・試作相談など製品開発を支援</p>
-      </div>
-      <div class="bg-[#f9f9fb] p-6 rounded-xl shadow-sm">
-        <h3 class="text-xl font-semibold text-[#2B3A67] mb-2">決済・ECソリューション</h3>
-        <p class="text-sm text-gray-600">D2Cやオンライン決済まわりの最新事例</p>
-      </div>
-      <div class="bg-[#f9f9fb] p-6 rounded-xl shadow-sm">
-        <h3 class="text-xl font-semibold text-[#2B3A67] mb-2">SNS・インフルエンサー施策</h3>
-        <p class="text-sm text-gray-600">TikTokなどライブ販促事例と相談ブース</p>
-      </div>
-      <div class="bg-[#f9f9fb] p-6 rounded-xl shadow-sm">
-        <h3 class="text-xl font-semibold text-[#2B3A67] mb-2">物流・コールドチェーン</h3>
-        <p class="text-sm text-gray-600">化粧品特化の温度帯配送と出荷改善ソリューション</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-[#2B3A67] text-white py-10 px-6">
-  <div class="max-w-screen-lg mx-auto text-center">
-    <p class="text-sm mb-2">主催：株式会社ベイコスメティックス</p>
-    <p class="text-sm mb-2">お問い合わせ：info@baycosme.co.jp</p>
-    <p class="text-xs">&copy; 2025 BAY COSMETICS Co., Ltd. All rights reserved.</p>
-  </div>
-</footer>
