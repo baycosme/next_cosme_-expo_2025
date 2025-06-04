@@ -16,22 +16,35 @@
 </head>
 <body class="bg-[#FAFAFA]">
 
+<!-- === GLOBAL NAV === -->
+<header class="w-full fixed top-0 left-0 bg-white/90 backdrop-blur shadow z-50">
+  <div class="max-w-screen-lg mx-auto flex justify-between items-center px-6 py-3 text-sm font-bold">
+    <a href="#kv" class="flex items-center gap-2"><img src="baycosmelogo.png" alt="Baycosme" class="h-6"></a>
+    <nav class="space-x-6 hidden md:block">
+      <a href="#summary" class="hover:text-[var(--blue)]">ABOUT</a>
+      <a href="#schedule" class="hover:text-[var(--blue)]">TIMETABLE</a>
+      <a href="#seminar" class="hover:text-[var(--blue)]">SEMINAR</a>
+      <a href="#faq" class="hover:text-[var(--blue)]">FAQ</a>
+    </nav>
+  </div>
+</header>
+
 <!-- 1) KV -->
-<section id="kv" class="relative text-center">
+<section id="kv" class="relative text-center pt-24"> <!-- 24px offset for fixed header -->
   <img src="KV_back.png" alt="KV" class="absolute inset-0 w-full h-full object-cover opacity-50">
-  <div class="relative z-10 py-44 px-4 flex flex-col items-center">
-    <img src="logo.png" alt="logo" class="mx-auto mb-6 w-44 md:w-60">
+  <div class="relative z-10 py-24 md:py-32 px-4 flex flex-col items-center">
+    <img src="logo.png" alt="logo" class="mx-auto mb-4 w-40 md:w-56">
     <h1 class="text-white drop-shadow flex flex-col items-center">
-      <span class="text-xl md:text-2xl font-extrabold italic tracking-wider mb-2">AI×成分×販促</span>
-      <span class="text-3xl md:text-4xl lg:text-5xl font-extrabold italic">化粧品業界最新トレンド展</span>
+      <span class="text-base md:text-xl font-extrabold italic tracking-wider mb-1">AI×成分×販促</span>
+      <span class="text-2xl md:text-4xl lg:text-5xl font-extrabold italic">化粧品業界最新トレンド展</span>
     </h1>
-    <p class="text-white text-sm md:text-lg mt-6 mb-6 drop-shadow">─ その1日が、あなたの化粧品づくりを“未来基準”へアップグレードする ─</p>
-    <p class="text-white text-lg md:text-2xl font-semibold mb-8 drop-shadow">
+    <p class="text-white text-xs md:text-lg mt-4 mb-4 drop-shadow">─ その1日が、あなたの化粧品づくりを“未来基準”へアップグレードする ─</p>
+    <p class="text-white text-sm md:text-xl font-semibold mb-6 drop-shadow">
       🗓️ 2025.6.30 (Mon) 16:00–19:30 &nbsp;/&nbsp; 📍 GMO Yours フクラス 16F
     </p>
-    <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank" rel="noopener" class="inline-block bg-[var(--yellow)] text-black font-semibold px-10 py-3 rounded-full shadow hover:opacity-90 transition">来場申し込みはこちら</a>
+    <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank" rel="noopener" class="inline-block bg-[var(--yellow)] text-black font-semibold px-8 py-3 rounded-full shadow hover:opacity-90 transition">来場申し込みはこちら</a>
   </div>
-  <div class="absolute bottom-0 inset-x-0 bg-white/70 py-2 text-sm flex flex-col md:flex-row justify-center gap-4 font-semibold">
+  <div class="absolute bottom-0 inset-x-0 bg-white/70 py-2 text-xs md:text-sm flex flex-col md:flex-row justify-center gap-2 font-semibold">
     <span>Sponsored by</span>
     <span>株式会社ベイコスメティックス / GMOインターネットグループ</span>
   </div>
@@ -41,7 +54,7 @@
 <section id="about" class="bg-white py-24 px-6">
   <div class="max-w-screen-lg mx-auto text-center">
     <h2 class="text-5xl font-extrabold italic text-[var(--blue)] mb-4">NEXT COSMETIC EXPO 2025</h2>
-    <p class="flex items-center justify-center text-sm text-gray-600 mb-10"><span class="w-12 h-px bg-gray-400 mr-3"></span>ネクストコスメティクスエキスポとは？<span class="w-12 h-px bg-gray-400 ml-3"></span></p>
+    <p class="flex items-center justify-center text-sm text-gray-600 mb-10"><span class="w-12 h-px bg-gray-400 mr-3"></span>ネクストコスメティックスエキスポとは？<span class="w-12 h-px bg-gray-400 ml-3"></span></p>
     <p class="text-lg leading-relaxed font-bold mb-6 max-w-4xl mx-auto">「業界初の化粧品生成AI」「次世代の最新成分」「TikTokで圧倒的”バズ”を叩き出す手法」──</p>
     <p class="text-base leading-relaxed max-w-4xl mx-auto">コスメの“開発・成分・拡散”を圧倒的に短縮する <span class="font-bold">“全方位トレンド”体験型EXPO</span> です。OEMを乗り換えたいブランド担当者も、異業種から参入を狙う企業も、ここに来れば、化粧品ビジネスの<span class="font-semibold">“勝てるヒント”</span>が即手の内に。</p>
   </div>
@@ -392,7 +405,7 @@
   </a>
 </div>
 
-<!-- Alpine.js for accordion -->
+<!-- Alpine for accordion -->
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </body>
 </html>
