@@ -8,8 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --blue-bg:#008ECF;   /* 帯・ボタン背景用 */
-      --blue-txt:#0066B8;  /* 見出しテキスト用（旧ブルー）*/
+      --blue-bg:#008ECF;   /* 帯・ブルーセクション背景 */
+      --blue-txt:#0066B8;  /* 見出しテキスト */
       --yellow:#FFCC00;
       --black:#333;
     }
@@ -21,150 +21,85 @@
 </head>
 <body class="bg-[#FAFAFA]">
 
-<!-- === GLOBAL NAV === -->
+<!-- ===== GLOBAL NAV ===== -->
 <header class="w-full fixed top-0 left-0 bg-white/90 backdrop-blur shadow z-50">
   <div class="max-w-screen-lg mx-auto flex justify-between items-center px-6 py-3 text-sm font-bold">
     <a href="#kv" class="text-[var(--black)] hover:text-[var(--blue-txt)]">NEXT&nbsp;COSMETIC&nbsp;EXPO&nbsp;2025</a>
     <nav class="space-x-6 hidden md:block">
-      <a href="#summary" class="hover:text-[var(--blue-txt)]">ABOUT</a>
+      <a href="#summary"  class="hover:text-[var(--blue-txt)]">ABOUT</a>
       <a href="#schedule" class="hover:text-[var(--blue-txt)]">TIMETABLE</a>
-      <a href="#seminar" class="hover:text-[var(--blue-txt)]">SEMINAR</a>
-      <a href="#faq" class="hover:text-[var(--blue-txt)]">FAQ</a>
+      <a href="#seminar"  class="hover:text-[var(--blue-txt)]">SEMINAR</a>
+      <a href="#faq"      class="hover:text-[var(--blue-txt)]">FAQ</a>
     </nav>
   </div>
 </header>
 
-<!-- 1) KV -->
+<!-- ===== KV ===== -->
 <section id="kv" class="relative pt-24">
-  <img src="KV_back.png" alt="KV" class="absolute inset-0 w-full h-full object-cover opacity-50">
-  <!-- Baycosme Logo -->
+  <img src="KV_back.png" class="absolute inset-0 w-full h-full object-cover opacity-50" alt="KV">
   <img src="baycosmelogo.png" alt="Baycosme" class="absolute top-4 left-4 h-8 z-20">
 
   <div class="relative z-10 py-16 md:py-20 px-4 flex flex-col md:flex-row md:items-center md:justify-center gap-8">
-    <!-- LEFT: Main Black Title -->
-    <div class="text-[#1F1F1F] font-extrabold italic leading-none text-center md:text-right">
-      <span class="block text-4xl md:text-5xl lg:text-6xl tracking-tight drop-shadow">NEXT</span>
-      <span class="block text-4xl md:text-5xl lg:text-6xl tracking-tight drop-shadow">COSMETIC</span>
-      <span class="block text-4xl md:text-5xl lg:text-6xl tracking-tight drop-shadow">EXPO&nbsp;<span class="text-2xl md:text-3xl align-baseline border border-[#1F1F1F] px-3">2025</span></span>
+    <!-- Main --><div class="text-[#1F1F1F] font-extrabold italic leading-none text-center md:text-right">
+      <span class="block text-4xl md:text-5xl lg:text-6xl drop-shadow">NEXT</span>
+      <span class="block text-4xl md:text-5xl lg:text-6xl drop-shadow">COSMETIC</span>
+      <span class="block text-4xl md:text-5xl lg:text-6xl drop-shadow">EXPO <span class="text-2xl md:text-3xl border border-[#1F1F1F] px-3">2025</span></span>
     </div>
-
-    <!-- RIGHT: Sub Copy -->
+    <!-- Sub -->
     <div class="flex flex-col items-center md:items-start text-white drop-shadow">
       <h1 class="flex flex-col">
         <span class="text-sm md:text-lg font-extrabold tracking-wider mb-1 shadow-md">AI×成分×販促</span>
         <span class="text-xl md:text-3xl lg:text-4xl font-extrabold shadow-md">化粧品業界最新トレンド展</span>
       </h1>
       <p class="text-xs md:text-lg mt-3 mb-3">─ その1日が、あなたの化粧品づくりを“未来基準”へアップグレードする ─</p>
-      <p class="text-xs md:text-xl font-semibold mb-6">
-        🗓️ 2025.6.30 (Mon) 16:00–19:30 &nbsp;/&nbsp; 📍 GMO Yours フクラス 16F
-      </p>
-      <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank" rel="noopener" class="inline-block bg-[var(--yellow)] text-black font-semibold px-8 py-3 rounded-full shadow hover:opacity-90 transition">来場申し込みはこちら</a>
+      <p class="text-xs md:text-xl font-semibold mb-6">🗓️ 2025.6.30 (Mon) 16:00–19:30 / 📍 GMO Yours フクラス 16F</p>
+      <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank" class="inline-block bg-[var(--yellow)] text-black font-semibold px-8 py-3 rounded-full shadow hover:opacity-90 transition">来場申し込みはこちら</a>
     </div>
   </div>
-
-  <div class="absolute bottom-0 inset-x-0 bg-white/70 py-2 text-xs md:text-sm flex flex-col md:flex-row justify-center gap-2 font-semibold">
-    <span>Sponsored by</span>
-    <span>株式会社ベイコスメティックス / GMOインターネットグループ</span>
+  <div class="absolute bottom-0 inset-x-0 bg-white/70 py-2 text-xs md:text-sm text-center font-semibold">
+    Sponsored by 株式会社ベイコスメティックス / GMOインターネットグループ
   </div>
 </section>
 
-<!-- === 以下のセクションは以前のまま（タイトル色変更用にクラスだけ調整） === -->
-
-<!-- ABOUT 例 -->
-<section id="about" class="bg-white py-24 px-6">
-  <div class="max-w-screen-lg mx-auto text-center">
-    <h2 class="text-5xl font-extrabold italic text-[var(--blue-txt)] mb-4">NEXT COSMETIC EXPO 2025</h2>
-    <p class="flex items-center justify-center text-sm text-gray-600 mb-10"><span class="w-12 h-px bg-gray-400 mr-3"></span>ネクストコスメティクスエキスポとは？<span class="w-12 h-px bg-gray-400 ml-3"></span></p>
-    <!-- そのほか unchanged -->
-  </div>
-</section>
-
-<!-- CTA 帯（背景は blue-bg） -->
+<!-- ===== FIRST CTA ===== -->
 <section class="bg-[var(--blue-bg)] py-10 text-center text-white">
-  <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank" rel="noopener" class="inline-block bg-[var(--yellow)] text-black px-10 py-4 rounded-full font-semibold hover:opacity-90 transition">来場申し込みはこちら</a>
+  <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank" class="inline-block bg-[var(--yellow)] text-black px-10 py-4 rounded-full font-semibold hover:opacity-90 transition">来場申し込みはこちら</a>
 </section>
 
-<!-- BENEFITS (見出し色修正) -->
+<!-- ===== BENEFITS ===== -->
 <section id="benefits" class="bg-white py-24 px-6">
   <div class="max-w-screen-lg mx-auto text-center">
     <h2 class="text-4xl font-extrabold italic text-[var(--blue-txt)] mb-2">BENEFITS</h2>
-    <!-- カード等は以前と同じ (画像 kouri.jpg のまま) -->
+    <!-- カードは省略 -->
   </div>
 </section>
 
-
-<!-- 2) ABOUT (unchanged) -->
-<section id="about" class="bg-white py-24 px-6">
-  <div class="max-w-screen-lg mx-auto text-center">
-    <h2 class="text-5xl font-extrabold italic text-[var(--blue-txt)] mb-4">NEXT COSMETIC EXPO 2025</h2>
-    <p class="flex items-center justify-center text-sm text-gray-600 mb-10"><span class="w-12 h-px bg-gray-400 mr-3"></span>ネクストコスメティックスエキスポとは？<span class="w-12 h-px bg-gray-400 ml-3"></span></p>
-    <p class="text-lg leading-relaxed font-bold mb-6 max-w-4xl mx-auto">「業界初の化粧品生成AI」「次世代の最新成分」「TikTokで圧倒的”バズ”を叩き出す手法」──</p>
-    <p class="text-base leading-relaxed max-w-4xl mx-auto">コスメの“開発・成分・拡散”を圧倒的に短縮する <span class="font-bold">“全方位トレンド”体験型EXPO</span> です。OEMを乗り換えたいブランド担当者も、異業種から参入を狙う企業も、ここに来れば、化粧品ビジネスの<span class="font-semibold">“勝てるヒント”</span>が即手の内に。</p>
-  </div>
-</section>
-
-<!-- 3) CTA (color updated automatically) -->
-<section class="bg-[var(--blue)] py-10 text-center text-white">
-  <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank" rel="noopener" class="inline-block bg-[var(--yellow)] text-black px-10 py-4 rounded-full font-semibold hover:opacity-90 transition">来場申し込みはこちら</a>
-</section>
-
-<!-- 4) BENEFITS (update image + responsive already ok) -->
-<section id="benefits" class="bg-white py-24 px-6">
-  <div class="max-w-screen-lg mx-auto text-center">
-    <h2 class="text-4xl font-extrabold italic text-[var(--blue-txt)] mb-2">BENEFITS</h2>
-    <p class="text-sm text-gray-600 mb-12">ー来場メリットー</p>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
-      <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center"><h4 class="text-xs font-semibold text-[var(--blue-txt)] mb-1">POINT 1</h4><h3 class="text-2xl font-extrabold mb-3">生成AI</h3><img src="ai.jpg" alt="AI" class="w-full h-48 object-cover mb-4 rounded"><p class="text-sm leading-relaxed">キーワード入力→瞬時に化粧品アイデア＋コンセプト設計＋処方開発まで5分で完成。試作リードタイムを約3か月短縮。</p></div>
-      <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center"><h4 class="text-xs font-semibold text-[var(--blue-txt)] mb-1">POINT 2</h4><h3 class="text-2xl font-extrabold mb-3">販促攻略</h3><img src="SNS.jpg" alt="SNS" class="w-full h-48 object-cover mb-4 rounded"><p class="text-sm leading-relaxed">TikTok Shop攻略！ByteDanceシニアマネージャー“〇〇氏”と1配信1億円売上の“rerere氏”が徹底対談。</p></div>
-      <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center"><h4 class="text-xs font-semibold text-[var(--blue-txt)] mb-1">POINT 3</h4><h3 class="text-2xl font-extrabold mb-3">コンセプト設計</h3><img src="concept.jpg" alt="Concept" class="w-full h-48 object-cover mb-4 rounded"><p class="text-sm leading-relaxed">時代に左右されない“普遍的”に刺さるコンセプト設計手法を特別解説。商品開発で迷う時間をゼロに。</p></div>
-      <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center"><h4 class="text-xs font-semibold text-[var(--blue-txt)] mb-1">POINT 4</h4><h3 class="text-2xl font-extrabold mb-3">小売攻略（仮）</h3><img src="kouri.jpg" alt="Retail" class="w-full h-48 object-cover mb-4 rounded"><p class="text-sm leading-relaxed">オンライン販売のみならず、ドラッグストア・バラエティショップ展開を見据えた戦略を紹介。</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- 5) EVENT SUMMARY (one‑line grid) -->
+<!-- ===== EVENT SUMMARY ===== -->
 <section id="summary" class="bg-[var(--blue-bg)] text-white py-20 px-6">
-  <div class="max-w-screen-lg mx-auto">
-    <h2 class="text-4xl font-extrabold italic text-center mb-2">EVENT SUMMARY</h2>
-    <p class="text-center text-sm mb-12">ーイベント開催概要ー</p>
+  <div class="max-w-screen-lg mx-auto text-center">
+    <h2 class="text-5xl font-extrabold italic mb-3">EVENT SUMMARY</h2>
+    <p class="text-base mb-12">ーイベント開催概要ー</p>
 
-    <div class="grid md:grid-cols-2 gap-y-8 gap-x-12 text-base leading-relaxed">
-      <div class="font-bold md:text-right">開催日程</div>
-      <div>2025年6月30日(月) 16:00–19:30（交流会19:30〜）</div>
-
-      <div class="font-bold md:text-right">会場</div>
-      <div>GMO フクラス</div>
-
-      <div class="font-bold md:text-right">イベント内容</div>
-      <div>セミナー：3枠 / 展示ブース：生成AI、数千人規模の量的調査結果</div>
-
-      <div class="font-bold md:text-right">参加人数</div>
-      <div>抽選150名限定</div>
-
-      <div class="font-bold md:text-right">入場料</div>
-      <div>無料（事前申込でスムーズ入場）</div>
-
-      <div class="font-bold md:text-right">来場特典</div>
-      <div>Coming Soon</div>
-
-      <div class="font-bold md:text-right">アクセス</div>
-      <div>JR渋谷駅西口徒歩1分 / 地下鉄B5出口直結</div>
-
-      <div class="font-bold md:text-right">会場提供</div>
-      <div class="flex items-center gap-2"><img src="GMOlogo.png" alt="GMO" class="h-6">GMOインターネットグループ</div>
+    <div class="grid md:grid-cols-2 gap-y-10 gap-x-12 text-lg leading-relaxed text-left md:text-center">
+      <div class="font-bold">開催日程</div><div>2025年6月30日(月) 16:00–19:30（交流会19:30〜）</div>
+      <div class="font-bold">会場</div><div>GMO フクラス</div>
+      <div class="font-bold">イベント内容</div><div>セミナー：3枠 / 展示ブース：生成AI、量的調査結果</div>
+      <div class="font-bold">参加人数</div><div>抽選150名限定</div>
+      <div class="font-bold">入場料</div><div>無料（事前申込でスムーズ入場）</div>
+      <div class="font-bold">来場特典</div><div>Coming Soon</div>
+      <div class="font-bold">アクセス</div><div>JR渋谷駅西口徒歩1分 / 地下鉄B5出口直結</div>
+      <div class="font-bold">会場提供</div><div class="flex justify-center md:justify-start lg:justify-center"><img src="GMOlogo.png" alt="GMO" class="h-6"></div>
     </div>
   </div>
 </section>
 
-
-
-<!-- 5‑2) 会場画像 -->
+<!-- ===== VENUE IMAGES ===== -->
 <section class="bg-white py-16 px-6">
   <div class="max-w-screen-lg mx-auto text-center">
     <h3 class="text-sm text-gray-600 mb-8">会場</h3>
     <div class="grid md:grid-cols-2 gap-6">
-      <img src="GMO_in.png" alt="GMO In" class="rounded-lg shadow">
-      <img src="GMO_out.png" alt="GMO Out" class="rounded-lg shadow">
+      <img src="GMO_in.png" class="rounded-lg shadow" alt="GMO In">
+      <img src="GMO_out.png" class="rounded-lg shadow" alt="GMO Out">
     </div>
   </div>
 </section>
