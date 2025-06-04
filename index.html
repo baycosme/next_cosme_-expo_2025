@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    :root{--blue:#0099E3;--yellow:#FFCC00;--black:#333}
+    :root{--blue:#008ECF;--yellow:#FFCC00;--black:#333}
     body{font-family:'Noto Sans JP',sans-serif;scroll-behavior:smooth;color:var(--black)}
     h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:.02em}
     section{scroll-margin-top:90px}
@@ -30,16 +30,25 @@
 </header>
 
 <!-- 1) KV -->
-<section id="kv" class="relative text-center pt-24"> <!-- 24px offset for fixed header -->
+<section id="kv" class="relative text-center pt-24">
   <img src="KV_back.png" alt="KV" class="absolute inset-0 w-full h-full object-cover opacity-50">
-  <div class="relative z-10 py-24 md:py-32 px-4 flex flex-col items-center">
-    <img src="logo.png" alt="logo" class="mx-auto mb-4 w-40 md:w-56">
-    <h1 class="text-white drop-shadow flex flex-col items-center">
-      <span class="text-base md:text-xl font-extrabold italic tracking-wider mb-1">AI×成分×販促</span>
-      <span class="text-2xl md:text-4xl lg:text-5xl font-extrabold italic">化粧品業界最新トレンド展</span>
+  <!-- Baycosme Logo top‑left -->
+  <img src="baycosmelogo.png" alt="Baycosme" class="absolute top-6 left-6 h-10 z-20">
+
+  <div class="relative z-10 py-20 md:py-28 px-4 flex flex-col items-center gap-2">
+    <!-- Main Title from provided image -->
+    <div class="text-[#1F1F1F] drop-shadow font-extrabold italic leading-none text-center">
+      <span class="block text-4xl md:text-5xl lg:text-6xl tracking-tight">NEXT</span>
+      <span class="block text-4xl md:text-5xl lg:text-6xl tracking-tight">COSMETIC</span>
+      <span class="block text-4xl md:text-5xl lg:text-6xl tracking-tight mb-2">EXPO&nbsp;<span class="text-2xl md:text-3xl align-baseline border border-[#1F1F1F] px-3">2025</span></span>
+    </div>
+
+    <h1 class="text-white drop-shadow flex flex-col items-center mt-4">
+      <span class="text-sm md:text-lg font-extrabold tracking-wider mb-1">AI×成分×販促</span>
+      <span class="text-xl md:text-3xl lg:text-4xl font-extrabold">化粧品業界最新トレンド展</span>
     </h1>
-    <p class="text-white text-xs md:text-lg mt-4 mb-4 drop-shadow">─ その1日が、あなたの化粧品づくりを“未来基準”へアップグレードする ─</p>
-    <p class="text-white text-sm md:text-xl font-semibold mb-6 drop-shadow">
+    <p class="text-white text-xs md:text-lg mt-3 mb-3 drop-shadow">─ その1日が、あなたの化粧品づくりを“未来基準”へアップグレードする ─</p>
+    <p class="text-white text-xs md:text-xl font-semibold mb-6 drop-shadow">
       🗓️ 2025.6.30 (Mon) 16:00–19:30 &nbsp;/&nbsp; 📍 GMO Yours フクラス 16F
     </p>
     <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank" rel="noopener" class="inline-block bg-[var(--yellow)] text-black font-semibold px-8 py-3 rounded-full shadow hover:opacity-90 transition">来場申し込みはこちら</a>
@@ -49,6 +58,7 @@
     <span>株式会社ベイコスメティックス / GMOインターネットグループ</span>
   </div>
 </section>
+
 
 <!-- 2) ABOUT (unchanged) -->
 <section id="about" class="bg-white py-24 px-6">
