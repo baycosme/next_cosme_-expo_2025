@@ -1,154 +1,221 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NEXT COSMETIC DAY 2025</title>
+  <title>NEXT COSMETIC EXPO 2025｜6.30 渋谷開催</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Inter', 'Noto Sans JP', sans-serif;
-    }
-    section {
-      scroll-margin-top: 100px;
-    }
+    body{font-family:'Noto Sans JP',sans-serif;scroll-behavior:smooth}
+    section{scroll-margin-top:80px}
+    /* フローティングCTA */
+    #floating-cta{position:fixed;bottom:20px;right:20px;z-index:50;}
   </style>
 </head>
-<body class="bg-[#F5F7FA] text-[#1D2A48]">
+<body class="bg-[#F6F7FA] text-[#0B2D5C]">
 
-<!-- Header -->
-<header class="fixed top-0 w-full z-50 bg-white shadow">
-  <div class="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center">
-    <div class="text-xl font-bold text-[#1D2A48]">Next COSMETIC EXPO 2025</div>
-    <nav class="space-x-4 text-sm">
-      <a href="#concept" class="text-[#1D2A48] hover:text-[#FF6B6B]">イベント概要</a>
-      <a href="#speakers" class="text-[#1D2A48] hover:text-[#FF6B6B]">登壇者</a>
-      <a href="#sessions" class="text-[#1D2A48] hover:text-[#FF6B6B]">セッション</a>
-      <a href="#exhibition" class="text-[#1D2A48] hover:text-[#FF6B6B]">展示体験</a>
-      <a href="#register" class="bg-[#FF6B6B] text-white px-4 py-2 rounded-full hover:bg-red-500 transition">参加申込</a>
-    </nav>
-  </div>
-</header>
-
-<!-- KV Banner -->
-<section class="mt-20">
-  <img src="KV.png" alt="キービジュアル" class="w-full h-auto max-h-[600px] md:max-h-[700px] object-contain mx-auto">
-</section>
-  
-<!-- Hero -->
-<section class="bg-white pt-32 pb-20 text-center px-4">
-  <div class="max-w-screen-md mx-auto">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">Next COSMETIC EXPO 2025</h1>
-    <p class="text-lg md:text-xl mb-6">“化粧品の未来”を1日で体感できる、業界のための特別なオフラインイベント</p>
-    <p class="text-base mb-1">🗓️ 2025年6月30日（月）15:00–19:00（19:00〜交流会）</p>
-    <p class="text-base mb-6">📍 GMOインターネットグループ 第２本社（渋谷フクラス 16F）</p>
-    <a href="#register" class="bg-[#FF6B6B] text-white font-semibold px-6 py-3 rounded-full hover:bg-red-500 transition">無料で参加登録</a>
-  </div>
+<!-- 1) KV (仮) -->
+<section id="kv" class="relative bg-[#0B2D5C] text-white text-center py-32 px-4">
+  <h1 class="text-4xl md:text-5xl font-bold mb-4">NEXT COSMETIC EXPO 2025</h1>
+  <p class="text-lg md:text-xl mb-8">2025.6.30 (Mon) 16:00 – 19:30 @ GMO インターネットグループ フクラス</p>
+  <a href="https://forms.gle/3zHZGRmFntwef6f89" class="inline-block bg-[#FF6B6B] text-white font-semibold px-8 py-3 rounded-full shadow hover:bg-red-500 transition">来場申し込みはこちら</a>
+  <p class="mt-8 text-sm opacity-70">※KVビジュアルは準備中です</p>
 </section>
 
-<!-- CTA -->
-<section class="bg-[#1D2A48] text-white py-10">
-  <div class="max-w-screen-md mx-auto text-center">
-    <p class="text-xl font-bold mb-3">この1日で、業界の“次”が見える。</p>
-    <a href="#register" class="inline-block bg-white text-[#1D2A48] font-semibold px-6 py-2 rounded-full hover:opacity-90 transition">参加申し込みはこちら</a>
-  </div>
-</section>
-
-<!-- Sessions Section -->
-<section id="sessions" class="bg-white py-20 px-6">
-  <div class="max-w-screen-lg mx-auto">
-    <h2 class="text-3xl font-bold text-[#1D2A48] text-center mb-12">セッションタイムテーブル</h2>
-    <div class="grid gap-8 md:grid-cols-2">
-      <div class="border-l-4 border-[#FF6B6B] pl-6">
-        <p class="text-sm text-gray-500">15:00–15:45</p>
-        <h3 class="text-xl font-bold mt-1">生成AIで“売れる処方”をつくる（仮）</h3>
-        <p class="text-sm mt-1">株式会社デジライズ　代表取締役　茶圓 将裕</p>
-      </div>
-      <div class="border-l-4 border-[#FF6B6B] pl-6">
-        <p class="text-sm text-gray-500">15:50–16:30</p>
-        <h3 class="text-xl font-bold mt-1">皮膚科医が見る“次に来る”成分（仮）</h3>
-        <p class="text-sm mt-1">小林智子先生（皮膚科医/YouTuber）</p>
-      </div>
-      <div class="border-l-4 border-[#FF6B6B] pl-6">
-        <p class="text-sm text-gray-500">16:35–17:15</p>
-        <h3 class="text-xl font-bold mt-1">TikTokライブコマース成功事例（仮）</h3>
-        <p class="text-sm mt-1">SNSマーケティング企業登壇予定</p>
-      </div>
-      <div class="border-l-4 border-[#FF6B6B] pl-6">
-        <p class="text-sm text-gray-500">17:20–18:00</p>
-        <h3 class="text-xl font-bold mt-1">D2C物流の裏側と失敗学（仮）</h3>
-        <p class="text-sm mt-1">佐川または日通 担当者（予定）</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Speakers Section -->
-<section id="speakers" class="bg-white py-20 px-6">
-  <div class="max-w-screen-lg mx-auto">
-    <h2 class="text-3xl font-bold text-[#1D2A48] text-center mb-12">登壇者紹介</h2>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-[#F5F7FA] p-6 rounded-xl shadow-md text-left">
-        <img src="kato_BC.png" alt="加藤聡太" class="w-36 h-36 object-cover object-top rounded-full mb-4 mx-auto">
-        <h3 class="text-xl font-bold text-center text-[#1D2A48]">加藤 聡太</h3>
-        <p class="text-sm text-center text-gray-600 mb-2">株式会社ベイコスメティックス<br>代表取締役社長</p>
-        <p class="text-sm text-gray-600">新卒で電通入社後、ストラテジックプランナーとして花王やトヨタなどの企業を担当。2021年より株式会社MDにてマーケティングコンサル事業の責任者として数十社を支援。化粧品開発において市場分析や顧客分析をもとにした売れる商品企画や販売プランを提案。</p>
-      </div>
-      <div class="bg-[#F5F7FA] p-6 rounded-xl shadow-md text-left">
-        <img src="chaen__sama.png" alt="茶圓 将裕" class="w-36 h-36 object-cover object-top rounded-full mb-4 mx-auto">
-        <h3 class="text-xl font-bold text-center text-[#1D2A48]">茶圓 将裕</h3>
-        <p class="text-sm text-center text-gray-600 mb-2">株式会社デジライズ<br>代表取締役</p>
-        <p class="text-sm text-gray-600">学生時代に英語圏での1年間の留学後、上海にて日系人事コンサル会社にて法人営業に従事。延べ100社以上の人事評価制度構築に携わる。日本に帰国後はSNSマーケティング事業の会社を起業。2022年には世界初のeat to earn NFTゲーム「Eatnsmile」をスペインで共同創業。帰国後はAIチャットボット「AideX」、AI語学学習ツール「AI会話」などAI関連サービスを開発。現在はAI専門家としてテレビにも出演し、2023年に法人向けAI研修と企業向けChatGPTを開発する「株式会社デジライズ」を設立。NewsPicksプロピッカーなども務める。</p>
-      </div>
-      <div class="bg-[#F5F7FA] p-6 rounded-xl shadow-md text-center">
-        <div class="w-24 h-24 mx-auto bg-gray-300 rounded-full mb-4"></div>
-        <h3 class="text-xl font-bold text-[#1D2A48]">Coming Soon</h3>
-        <p class="text-sm text-gray-500">登壇者情報は近日公開予定です。</p>
-      </div>
-      <div class="bg-[#F5F7FA] p-6 rounded-xl shadow-md text-center">
-        <div class="w-24 h-24 mx-auto bg-gray-300 rounded-full mb-4"></div>
-        <h3 class="text-xl font-bold text-[#1D2A48]">Coming Soon</h3>
-        <p class="text-sm text-gray-500">登壇者情報は近日公開予定です。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Exhibition Section -->
-<section id="exhibition" class="bg-[#F9FAFC] py-20 px-6">
-  <div class="max-w-screen-lg mx-auto">
-    <h2 class="text-3xl font-bold text-[#1D2A48] text-center mb-12">展示・体験ゾーン</h2>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-white p-6 rounded-xl shadow-sm">
-        <h3 class="text-xl font-semibold mb-2">OEM & 処方開発</h3>
-        <p class="text-sm text-gray-600">トレンド成分・試作相談など製品開発を支援</p>
-      </div>
-      <div class="bg-white p-6 rounded-xl shadow-sm">
-        <h3 class="text-xl font-semibold mb-2">決済・ECソリューション</h3>
-        <p class="text-sm text-gray-600">D2Cやオンライン決済まわりの最新事例</p>
-      </div>
-      <div class="bg-white p-6 rounded-xl shadow-sm">
-        <h3 class="text-xl font-semibold mb-2">SNS・インフルエンサー施策</h3>
-        <p class="text-sm text-gray-600">TikTokなどライブ販促事例と相談ブース</p>
-      </div>
-      <div class="bg-white p-6 rounded-xl shadow-sm">
-        <h3 class="text-xl font-semibold mb-2">物流・コールドチェーン</h3>
-        <p class="text-sm text-gray-600">化粧品特化の温度帯配送と出荷改善ソリューション</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-[#1D2A48] text-white py-10 px-6">
+<!-- 2) EXPOとは -->
+<section id="about" class="bg-white py-20 px-6">
   <div class="max-w-screen-lg mx-auto text-center">
-    <p class="text-sm mb-2">主催：株式会社ベイコスメティックス</p>
-    <p class="text-sm mb-2">お問い合わせ：info@baycosme.co.jp</p>
-    <p class="text-xs">&copy; 2025 BAY COSMETICS Co., Ltd. All rights reserved.</p>
+    <h2 class="text-3xl font-bold mb-6">NEXT COSMETIC EXPO 2025とは？</h2>
+    <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+      「業界初の<span class="font-bold text-[#FF6B6B]">化粧品生成AI</span>」「<span class="font-bold text-[#FF6B6B]">次世代の最新成分</span>」「<span class="font-bold text-[#FF6B6B]">TikTokで圧倒的“バズ”</span>を叩き出す手法」──<br>
+      コスメの“開発・成分・拡散”を圧倒的スピードで実現する <span class="font-bold">“全方位トレンド”体験型EXPO</span> です。<br>
+      OEMを乗り換えたいブランド担当者も、異業種から参入を狙う企業も、ここに来れば <span class="underline">化粧品ビジネスの“勝てるヒント”</span> が即座に手の内に。
+    </p>
+  </div>
+</section>
+
+<!-- 3) CTA -->
+<section class="bg-[#0B2D5C] py-10 text-center text-white">
+  <a href="https://forms.gle/3zHZGRmFntwef6f89" class="inline-block bg-[#FF6B6B] px-10 py-4 rounded-full font-semibold hover:bg-red-500 transition">来場申し込みはこちら</a>
+</section>
+
+<!-- 4) 来場メリット -->
+<section id="benefits" class="bg-white py-20 px-6">
+  <div class="max-w-screen-lg mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10">会場で得られる<br class="md:hidden">化粧品ビジネスの“勝てるヒント”</h2>
+    <div class="grid md:grid-cols-3 gap-8 text-left">
+      <!-- Point1 -->
+      <div>
+        <h3 class="text-[#FF6B6B] font-semibold text-xl mb-2">POINT 1 生成AI</h3>
+        <p class="text-sm leading-relaxed">キーワード入力→瞬時に化粧品アイデア＋コンセプト設計＋処方開発まで5分で完成。<br>試作リードタイムを約3か月短縮。</p>
+      </div>
+      <!-- Point2 -->
+      <div>
+        <h3 class="text-[#FF6B6B] font-semibold text-xl mb-2">POINT 2 SNS</h3>
+        <p class="text-sm leading-relaxed">TikTok Shop攻略！ByteDanceシニアマネージャー“〇〇氏”と1配信1億円売上の“rerere氏”が徹底対談。</p>
+      </div>
+      <!-- Point3 -->
+      <div>
+        <h3 class="text-[#FF6B6B] font-semibold text-xl mb-2">POINT 3 コンセプト設計</h3>
+        <p class="text-sm leading-relaxed">時代に左右されない“普遍的”に刺さるコンセプト設計手法を特別解説。商品開発で迷う時間をゼロに。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5) Event Summary -->
+<section id="summary" class="bg-[#0B2D5C] text-white py-20 px-6">
+  <div class="max-w-screen-lg mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10">イベント開催概要</h2>
+    <div class="grid md:grid-cols-2 gap-6 text-sm leading-relaxed">
+      <div class="space-y-2">
+        <p><span class="font-semibold">開催日程：</span>2025年6月30日(月) 16:00–19:30（交流会19:30〜）</p>
+        <p><span class="font-semibold">会場：</span>GMOインターネットグループ 第２本社 GMO Yours・フクラス 16F（渋谷）</p>
+        <p><span class="font-semibold">内容：</span>セミナー3枠 / 展示ブース（生成AI・量的調査パネル）</p>
+        <p><span class="font-semibold">参加人数：</span>抽選150名限定</p>
+        <p><span class="font-semibold">入場料：</span>無料（事前申込でスムーズ入場）</p>
+      </div>
+      <div class="space-y-2">
+        <p><span class="font-semibold">来場特典：</span>Coming Soon</p>
+        <p><span class="font-semibold">アクセス：</span>JR渋谷駅西口徒歩1分 / 地下鉄B5出口直結</p>
+        <p><span class="font-semibold">会場提供：</span>GMOインターネットグループ</p>
+        <p><span class="font-semibold">注意事項：</span>入館カード紛失にご注意ください。他詳細は申込完了メールをご確認ください。</p>
+        <p><span class="font-semibold">禁止事項：</span>差別・ハラスメント・政治活動等、一切禁止。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6) Contents -->
+<section id="contents" class="bg-white py-20 px-6">
+  <div class="max-w-screen-lg mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <img src="booth_placeholder.png" alt="展示エリア" class="w-full rounded-lg mb-4 md:mb-0">
+      <h3 class="text-2xl font-bold mb-2">最新情報をキャッチできる企業ブースエリア</h3>
+      <p class="text-sm leading-relaxed">化粧品ビジネスを後押しするサービス紹介ブースで、出会いたい企業にきっと出会える。</p>
+    </div>
+    <div>
+      <img src="seminar_placeholder.png" alt="セミナー" class="w-full rounded-lg mb-4 md:mb-0">
+      <h3 class="text-2xl font-bold mb-2">各業界の著名人が登壇する豪華セミナー</h3>
+      <p class="text-sm leading-relaxed">ここでしか聞けない話が聞けるセッションを開催。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7) CTA -->
+<section class="bg-[#0B2D5C] text-white py-10 text-center">
+  <a href="https://forms.gle/3zHZGRmFntwef6f89" class="inline-block bg-[#FF6B6B] px-10 py-4 rounded-full font-semibold hover:bg-red-500 transition">来場申し込みはこちら</a>
+</section>
+
+<!-- 8) Seminar -->
+<section id="seminar" class="bg-white py-20 px-6">
+  <div class="max-w-screen-lg mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">セミナー プログラム</h2>
+    <!-- Session Cards -->
+    <div class="space-y-10">
+      <!-- Session 1 -->
+      <div class="grid md:grid-cols-6 gap-6 items-center">
+        <div class="md:col-span-1 flex justify-center"><div class="w-24 h-24 bg-gray-300 rounded-full flex items-center justify-center text-xs">Coming<br>Soon</div></div>
+        <div class="md:col-span-5">
+          <h3 class="font-semibold text-[#FF6B6B] mb-1">Session1 16:05–17:00</h3>
+          <p class="text-xl font-bold mb-1">生成AIで“売れる処方”をつくる（仮）</p>
+          <p class="text-sm text-gray-500 mb-2">株式会社デジライズ　代表取締役　茶圓 将裕</p>
+          <p class="text-sm">生成AIで“売れる処方”をつくる（仮）</p>
+        </div>
+      </div>
+      <!-- Session 2 -->
+      <div class="grid md:grid-cols-6 gap-6 items-center">
+        <div class="md:col-span-1 flex justify-center"><div class="w-24 h-24 bg-gray-300 rounded-full flex items-center justify-center text-xs">Coming<br>Soon</div></div>
+        <div class="md:col-span-5">
+          <h3 class="font-semibold text-[#FF6B6B] mb-1">Session2 17:15–18:00</h3>
+          <p class="text-xl font-bold mb-1">TikTokライブコマース成功事例（仮）</p>
+          <p class="text-sm text-gray-500 mb-2">ByteDance 高倉氏 / rerere 氏</p>
+          <p class="text-sm">TikTokライブコマース成功事例（仮）</p>
+        </div>
+      </div>
+      <!-- Session 3 -->
+      <div class="grid md:grid-cols-6 gap-6 items-center">
+        <div class="md:col-span-1 flex justify-center"><div class="w-24 h-24 bg-gray-300 rounded-full flex items-center justify-center text-xs">Coming<br>Soon</div></div>
+        <div class="md:col-span-5">
+          <h3 class="font-semibold text-[#FF6B6B] mb-1">Session3 18:15–19:00</h3>
+          <p class="text-xl font-bold mb-1">コンセプト解説（仮）</p>
+          <p class="text-sm text-gray-500 mb-2">株式会社MD 代表取締役社長 石井賢介</p>
+          <p class="text-sm">コンセプト解説（仮）</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9) Exhibition Booth -->
+<section id="booth" class="bg-[#F9FAFC] py-20 px-6">
+  <div class="max-w-screen-lg mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">展示ブース</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-sm">
+        <h3 class="font-semibold text-xl text-[#0B2D5C] mb-2">化粧品生成AIデモ</h3>
+        <p class="text-sm leading-relaxed">キーワード入力→瞬時に化粧品アイデア＋コンセプト設計＋処方開発まで5分で完成。</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm">
+        <h3 class="font-semibold text-xl text-[#0B2D5C] mb-2">売れる商品を生むデータ術</h3>
+        <p class="text-sm leading-relaxed">数千人アンケート&N=1インタビュー結果をパネル展示。ヒット要因を“盗める”分析パネル。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10) Time Schedule -->
+<section id="schedule" class="bg-white py-20 px-6">
+  <div class="max-w-screen-lg mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">タイムスケジュール</h2>
+    <div class="space-y-6 text-sm">
+      <p>16:00〜16:05　オープニング基調講演　GMO payment様 ご挨拶</p>
+      <p>16:05〜16:45　Session1：生成AIで“売れる処方”をつくる（仮） / 茶圓 将裕</p>
+      <p>16:45〜17:00　休憩・ブース巡り</p>
+      <p>17:00〜17:45　Session2：TikTokライブコマース成功事例（仮） / ByteDance 高倉氏</p>
+      <p>17:45〜18:00　休憩・ブース巡り</p>
+      <p>18:00〜18:45　Session3：コンセプト解説（仮） / 石井賢介</p>
+      <p>18:45〜19:00　休憩・ブース巡り</p>
+      <p>19:00〜19:30　Session4：1配信9000個完売のトップライブコマーサー（仮） / rerere</p>
+      <p>19:30〜21:00　交流会</p>
+    </div>
+  </div>
+</section>
+
+<!-- 11) 来場者特典 -->
+<section id="benefit" class="bg-[#0B2D5C] text-white py-20 px-6 text-center">
+  <h2 class="text-3xl font-bold mb-4">来場者限定特典</h2>
+  <p class="text-lg">Coming Soon</p>
+</section>
+
+<!-- 12) FAQ -->
+<section id="faq" class="bg-white py-20 px-6">
+  <div class="max-w-screen-lg mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">よくある質問</h2>
+    <div class="space-y-6 text-sm leading-relaxed">
+      <div><p class="font-semibold">Q. 再入場はできますか？</p><p>A. できます。</p></div>
+      <div><p class="font-semibold">Q. 入場にお金はかかりますか？</p><p>A. 一切かかりません。</p></div>
+      <div><p class="font-semibold">Q. 交流会から入場しても良いですか？</p><p>A. もちろん、入退場自由です。</p></div>
+      <div><p class="font-semibold">Q. 同伴者を連れて行けますか？</p><p>A. 1社あたり最大3名まで同伴可能です（全員事前登録が必要）。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 13) Footer -->
+<footer class="bg-[#0B2D5C] text-white py-10 px-6">
+  <div class="max-w-screen-lg mx-auto text-center space-y-2 text-sm">
+    <p>運営企業：<a href="https://baycosme.com/" class="underline">株式会社ベイコスメティックス</a></p>
+    <p>会場提供：<a href="https://www.gmo.jp/" class="underline">GMOインターネットグループ</a></p>
+    <p>プライバシーポリシー：<a href="https://baycosme.com/privacy_policy" class="underline">ベイコスメ</a> / <a href="https://www.gmo.jp/csr/governance/privacy-policy/" class="underline">GMO</a></p>
+    <p class="text-xs">© 2025 BAY COSMETICS Co., Ltd.</p>
   </div>
 </footer>
+
+<!-- 14) Floating CTA -->
+<div id="floating-cta">
+  <a href="https://forms.gle/3zHZGRmFntwef6f89" class="bg-[#FF6B6B] text-white px-6 py-3 rounded-full shadow-lg hover:bg-red-500 transition">来場申し込みはこちら</a>
+</div>
 
 </body>
 </html>
