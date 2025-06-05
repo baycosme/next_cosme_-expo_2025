@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
@@ -7,14 +6,15 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    :root{--blue-bg:#007CCF;      /* メイン帯・フッター */
-      --blue-txt:#0066B8;     /* 見出し文字 */
+    :root{
+      --blue-main:#0066B8;    /* EXHIBITIONS 見出しのブルー → 全帯色 */
       --blue-accent:#33C3E6;  /* ホバー／リンク */
       --yellow:#FFCC00;
-      --black:#333;}
+      --black:#333;
+    }
     body{font-family:'Noto Sans JP',sans-serif;scroll-behavior:smooth;color:var(--black)}
     h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:.02em}
-    section{scroll-margin-top:80px}
+    section{scroll-margin-top:90px}
     #floating-cta{position:fixed;bottom:20px;right:20px;z-index:50;}
   </style>
 </head>
@@ -24,12 +24,12 @@
 <!-- ===== GLOBAL NAV ===== -->
 <header class="w-full fixed top-0 left-0 bg-white/90 backdrop-blur shadow z-50">
   <div class="max-w-screen-lg mx-auto flex justify-between items-center px-6 py-4 text-base md:text-xl font-bold">
-    <a href="#kv" class="text-[var(--black)] hover:text-[var(--blue-txt)] whitespace-nowrap">NEXT&nbsp;COSMETIC&nbsp;EXPO&nbsp;2025</a>
+    <a href="#kv" class="text-[var(--black)] hover:text-[var(--blue-accent)] whitespace-nowrap">NEXT&nbsp;COSMETIC&nbsp;EXPO&nbsp;2025</a>
     <nav class="space-x-8 hidden md:block">
-      <a href="#summary"  class="hover:text-[var(--blue-txt)]">ABOUT</a>
-      <a href="#schedule" class="hover:text-[var(--blue-txt)]">TIMETABLE</a>
-      <a href="#seminar"  class="hover:text-[var(--blue-txt)]">SEMINAR</a>
-      <a href="#faq"      class="hover:text-[var(--blue-txt)]">FAQ</a>
+      <a href="#summary"  class="hover:text-[var(--blue-accent)]">ABOUT</a>
+      <a href="#schedule" class="hover:text-[var(--blue-accent)]">TIMETABLE</a>
+      <a href="#seminar"  class="hover:text-[var(--blue-accent)]">SEMINAR</a>
+      <a href="#faq"      class="hover:text-[var(--blue-accent)]">FAQ</a>
     </nav>
   </div>
 </header>
@@ -77,8 +77,8 @@
 </section>
   
 <!-- 3) CTA -->
-<section class="bg-[var(--blue-bg)] py-10 text-center text-white">
-  <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank" rel="noopener" class="inline-block bg-[var(--yellow)] text-black px-10 py-4 rounded-full font-semibold hover:opacity-90 transition">来場申し込みはこちら</a>
+<section class="bg-[var(--blue-main)] py-10 text-center text-white">
+  <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank" class="inline-block bg-[var(--yellow)] text-black px-12 py-4 rounded-full font-semibold hover:bg-[var(--blue-accent)] transition">来場申し込みはこちら</a>
 </section>
   
 <!-- 4) BENEFITS -->
@@ -97,11 +97,10 @@
 </section>
   
 <!-- 5) EVENT SUMMARY -->
-<section id="summary" class="bg-[var(--blue-bg)] text-white py-20 px-6">
+<section id="summary" class="bg-[var(--blue-main)] text-white py-20 px-6">
   <div class="max-w-screen-lg mx-auto text-center">
     <h2 class="text-5xl font-extrabold italic mb-3">EVENT SUMMARY</h2>
     <p class="text-lg mb-12">ーイベント開催概要ー</p>
-
     <div class="grid md:grid-cols-2 gap-y-10 gap-x-12 text-lg leading-relaxed">
       <div class="font-bold">開催日程</div><div>2025年6月30日(月) 16:00–19:30（交流会19:30〜）</div>
       <div class="font-bold">会場</div><div>GMO フクラス</div>
@@ -183,21 +182,31 @@
 </section>
   
 <!-- 9) EXHIBITIONS -->
-<section id="booth" class="bg-[#F5F5F5] py-24 px-6">
+<section id="booth" class="bg-[var(--blue-main)] text-white py-24 px-6">
   <div class="max-w-screen-lg mx-auto text-center">
-    <h2 class="text-4xl font-extrabold italic text-[var(--blue-bg)] mb-2">EXHIBITIONS</h2>
-    <p class="text-sm text-gray-600 mb-12">ー展示ブースー</p>
+    <h2 class="text-4xl font-extrabold italic mb-2">EXHIBITIONS</h2>
+    <p class="text-sm mb-12">ー展示ブースー</p>
     <div class="grid md:grid-cols-2 gap-8 text-left">
-      <div class="bg-white p-6 rounded-lg shadow"><h3 class="text-xl font-bold mb-2">化粧品生成AIデモ</h3><p class="text-sm leading-relaxed">キーワード入力→瞬時に化粧品アイデア＋コンセプト設計＋処方開発まで5分で完成。</p></div>
-      <div class="bg-white p-6 rounded-lg shadow"><h3 class="text-xl font-bold mb-2">売れる商品を生むデータ術</h3><p class="text-sm leading-relaxed">数千人アンケート&N=1インタビュー結果をパネル展示。ヒット要因を“盗める”分析パネル。</p></div>
+      <div class="bg-white/10 p-6 rounded-lg">
+        <h3 class="text-xl font-bold mb-2">化粧品生成AIデモ</h3>
+        <p class="text-sm leading-relaxed">キーワード入力→瞬時に化粧品アイデア＋コンセプト設計＋処方開発まで5分で完成。</p>
+      </div>
+      <div class="bg-white/10 p-6 rounded-lg">
+        <h3 class="text-xl font-bold mb-2">売れる商品を生むデータ術</h3>
+        <p class="text-sm leading-relaxed">数千人アンケート&N=1インタビュー結果をパネル展示。ヒット要因を“盗める”分析パネル。</p>
+      </div>
     </div>
   </div>
 </section>
+
+
+
+
   
 <!-- 10) TIME SCHEDULE -->
 <section id="schedule" class="bg-white py-24 px-6">
   <div class="max-w-screen-lg mx-auto text-center">
-    <h2 class="text-4xl font-extrabold italic text-[var(--blue)] mb-2">TIME SCHEDULE</h2>
+    <h2 class="text-4xl font-extrabold italic text-[var(--blue-txt)] mb-2">TIME SCHEDULE</h2>
     <p class="text-sm text-gray-600 mb-12">ータイムスケジュールー</p>
     <div class="text-left space-y-4">
       <p>16:00〜16:05　オープニング基調講演　GMO payment様 ご挨拶</p>
@@ -215,11 +224,10 @@
 
 
 <!-- 11-bis) ACCESS -->
-<!-- ----------------- ACCESS (updated) ----------------- -->
-<section id="access" class="bg-[#F5F5F5] py-24 px-6">
-  <div class="max-w-screen-lg mx-auto">
-    <h2 class="text-4xl font-extrabold italic text-[var(--blue-txt)] text-center mb-2">ACCESS</h2>
-    <p class="text-sm text-gray-600 text-center mb-12">ーアクセスー</p>
+  <section id="access" class="bg-[var(--blue-main)] text-white py-24 px-6">
+  <div class="max-w-screen-lg mx-auto text-center">
+    <h2 class="text-4xl font-extrabold italic mb-2">ACCESS</h2>
+    <p class="text-sm mb-12">ーアクセスー</p>
 
     <div class="grid md:grid-cols-2 gap-8">
       <!-- 左: テキストブロック -->
@@ -335,8 +343,9 @@
 </section>
   
 <!-- 14) FOOTER -->
-<footer class="bg-[var(--blue-bg)] text-white py-10 px-6">
-  <div class="max-w-screen-lg mx-auto text-center space-y-2 text-sm">
+<footer class="bg-[var(--blue-main)] text-white py-10 px-6">
+  <div class="max-w-screen-lg mx-auto text-center space-y-4 text-sm">
+  
     <p>運営企業：<a href="https://baycosme.com/" target="_blank" rel="noopener" class="underline">株式会社ベイコスメティックス</a></p>
     <p>会場提供：<a href="https://www.gmo.jp/" target="_blank" rel="noopener" class="underline">GMOインターネットグループ</a></p>
     <p>プライバシーポリシー：<a href="https://baycosme.com/privacy_policy" target="_blank" rel="noopener" class="underline">ベイコスメ</a> / <a href="https://www.gmo.jp/csr/governance/privacy-policy/" target="_blank" rel="noopener" class="underline">GMO</a></p>
