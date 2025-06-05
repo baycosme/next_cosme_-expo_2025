@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --blue-main:#0066B8;    /* 帯・青セクション背景／見出し */
+      --blue-main:#0066B8;    /* 基調ブルー */
       --blue-accent:#33C3E6;  /* ホバー／リンク */
       --yellow:#FFCC00;
       --black:#333;
@@ -16,8 +16,7 @@
     h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:.02em;color:var(--blue-main)}
     section{scroll-margin-top:90px}
     #floating-cta{position:fixed;bottom:20px;right:20px;z-index:50;}
-    /* timetable card style */
-    .agenda-card{background:#fff4;border-left:4px solid var(--yellow)}
+    .agenda-card{background:#ffffff;border-left:4px solid var(--yellow);color:var(--black)}
   </style>
 </head>
 <body class="bg-[#FAFAFA]">
@@ -40,32 +39,22 @@
 <!-- 1) KV -->
 <section id="kv" class="relative pt-20">
   <img src="KV_back.png" class="absolute inset-0 w-full h-full object-cover opacity-50" alt="KV">
-
-  <!-- Flex box to center content slightly above mid → translate‑y -->
   <div class="relative z-10 flex flex-col md:flex-row md:items-center md:justify-center gap-8 min-h-[380px] md:min-h-[480px] px-4 md:translate-y-[-20px]">
-    <!-- Main Title -->
     <div class="text-[#1F1F1F] font-extrabold italic leading-none text-center md:text-right">
-      <span class="block text-6xl md:text-7xl lg:text-8xl drop-shadow">NEXT</span>
-      <span class="block text-6xl md:text-7xl lg:text-8xl drop-shadow">COSMETIC</span>
-      <span class="block text-6xl md:text-7xl lg:text-8xl drop-shadow">EXPO <span class="text-3xl md:text-4xl border border-[#1F1F1F] px-3">2025</span></span>
+      <span class="block text-6xl md:text-7xl lg:text-8xl">NEXT</span>
+      <span class="block text-6xl md:text-7xl lg:text-8xl">COSMETIC</span>
+      <span class="block text-6xl md:text-7xl lg:text-8xl">EXPO <span class="text-3xl md:text-4xl border border-[#1F1F1F] px-3">2025</span></span>
     </div>
-    <!-- Sub Copy -->
-    <div class="flex flex-col items-center md:items-start text-white max-w-xs md:max-w-none">
-      <h1 class="flex flex-col text-center md:text-left">
-        <span class="text-base md:text-xl font-extrabold tracking-wider mb-1" style="text-shadow:0 3px 6px rgba(0,0,0,.55);">AI×成分×販促</span>
-        <span class="text-3xl md:text-5xl lg:text-6xl font-extrabold" style="text-shadow:0 3px 6px rgba(0,0,0,.55);">化粧品業界最新トレンド展</span>
-      </h1>
+    <div class="flex flex-col items-center md:items-start text-white max-w-xs md:max-w-none" style="text-shadow:0 3px 6px rgba(0,0,0,.55)">
+      <span class="text-base md:text-xl font-extrabold tracking-wider mb-1">AI×成分×販促</span>
+      <span class="text-3xl md:text-5xl lg:text-6xl font-extrabold">化粧品業界最新トレンド展</span>
       <p class="text-sm md:text-lg mt-4 mb-4 text-center md:text-left">─ その1日が、あなたの化粧品づくりを“未来基準”へアップグレードする ─</p>
       <p class="text-sm md:text-xl font-semibold mb-6">🗓️ 2025.6.30 (Mon) 16:00–19:30 / 📍 GMO Yours フクラス 16F</p>
       <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank" class="inline-block bg-[var(--yellow)] text-black font-semibold px-10 py-3 rounded-full shadow hover:bg-[var(--blue-accent)] transition">来場申し込みはこちら</a>
     </div>
   </div>
-
-  <div class="absolute bottom-0 inset-x-0 bg-white/70 py-2 text-xs md:text-sm text-center font-semibold">
-    Sponsored by 株式会社ベイコスメティックス / GMOインターネットグループ
-  </div>
+  <div class="absolute bottom-0 inset-x-0 bg-white/70 py-2 text-xs md:text-sm text-center font-semibold">Sponsored by 株式会社ベイコスメティックス / GMOインターネットグループ</div>
 </section>
-
   
   
 <!-- 2) ABOUT -->
@@ -102,8 +91,9 @@
 <!-- 5) EVENT SUMMARY -->
 <section id="summary" class="bg-[var(--blue-main)] text-white py-20 px-6">
   <div class="max-w-screen-lg mx-auto text-center">
-    <h2 class="text-5xl font-extrabold italic mb-3">EVENT SUMMARY</h2>
-    <p class="text-lg mb-12">ーイベント開催概要ー</p>
+    <h2 class="text-5xl font-extrabold italic text-white mb-3">EVENT SUMMARY</h2>
+    <p class="text-lg text-white mb-12">ーイベント開催概要ー</p>
+  
     <div class="grid md:grid-cols-2 gap-y-10 gap-x-12 text-lg leading-relaxed">
       <div class="font-bold">開催日程</div><div>2025年6月30日(月) 16:00–19:30（交流会19:30〜）</div>
       <div class="font-bold">会場</div><div>GMO フクラス</div>
@@ -142,8 +132,8 @@
 </section>
   
 <!-- 7) CTA -->
-<section class="bg-[var(--blue-bg)] py-10 text-center text-white">
-  <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank" rel="noopener" class="inline-block bg-[var(--yellow)] text-black px-10 py-4 rounded-full font-semibold hover:opacity-90 transition">来場申し込みはこちら</a>
+<section class="bg-[var(--blue-main)] py-10 text-center text-white">
+  <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank" class="inline-block bg-[var(--yellow)] text-black px-12 py-4 rounded-full font-semibold hover:bg-[var(--blue-accent)] transition">来場申し込みはこちら</a>
 </section>
   
 <!-- 8) SEMINAR PROGRAM -->
@@ -187,14 +177,14 @@
 <!-- 9) EXHIBITIONS -->
 <section id="booth" class="bg-[var(--blue-main)] text-white py-24 px-6">
   <div class="max-w-screen-lg mx-auto text-center">
-    <h2 class="text-4xl font-extrabold italic mb-2">EXHIBITIONS</h2>
-    <p class="text-sm mb-12">ー展示ブースー</p>
+    <h2 class="text-4xl font-extrabold italic text-white mb-2">EXHIBITIONS</h2>
+    <p class="text-sm text-white mb-12">ー展示ブースー</p>
     <div class="grid md:grid-cols-2 gap-8 text-left">
-      <div class="bg-white/10 p-6 rounded-lg">
+      <div class="bg-white text-black p-6 rounded-lg shadow">
         <h3 class="text-xl font-bold mb-2">化粧品生成AIデモ</h3>
         <p class="text-sm leading-relaxed">キーワード入力→瞬時に化粧品アイデア＋コンセプト設計＋処方開発まで5分で完成。</p>
       </div>
-      <div class="bg-white/10 p-6 rounded-lg">
+      <div class="bg-white text-black p-6 rounded-lg shadow">
         <h3 class="text-xl font-bold mb-2">売れる商品を生むデータ術</h3>
         <p class="text-sm leading-relaxed">数千人アンケート&N=1インタビュー結果をパネル展示。ヒット要因を“盗める”分析パネル。</p>
       </div>
@@ -204,12 +194,13 @@
 
 
 
-
   
 <!-- 10) TIME SCHEDULE -->
 <section id="schedule" class="bg-white py-24 px-6">
-  <div class="max-w-screen-lg mx-auto text-left">
+  <div class="max-w-screen-lg mx-auto">
     <h2 class="text-4xl md:text-5xl font-extrabold italic text-center mb-12">TIME SCHEDULE</h2>
+    <div class="space-y-8">
+
 
     <!-- Agenda cards -->
     <div class="space-y-8">
@@ -261,10 +252,11 @@
   
 
 <!-- 11-bis) ACCESS -->
-  <section id="access" class="bg-[var(--blue-main)] text-white py-24 px-6">
+ <section id="access" class="bg-[var(--blue-main)] text-white py-24 px-6">
   <div class="max-w-screen-lg mx-auto text-center">
-    <h2 class="text-4xl font-extrabold italic mb-2">ACCESS</h2>
-    <p class="text-sm mb-12">ーアクセスー</p>
+    <h2 class="text-4xl font-extrabold italic text-white mb-2">ACCESS</h2>
+    <p class="text-sm text-white mb-12">ーアクセスー</p>
+
 
     <div class="grid md:grid-cols-2 gap-8">
       <!-- 左: テキストブロック -->
@@ -330,17 +322,19 @@
   <p class="text-sm text-gray-600 mb-6">ー来場者限定特典ー</p>
   <p class="text-xl font-semibold">Coming Soon</p>
 </section>
-  
+
+
   
 <!-- 13) FAQ -->
-<section id="faq" class="bg-[var(--blue-main)] text-white py-24 px-6">
-  <h2 class="text-4xl font-extrabold italic text-center mb-12">FAQ</h2>
-    <p class="text-sm text-gray-600 mb-12">ーよくある質問ー</p>
+<section id="faq" class="bg-[var(--blue-main)] text-white py-24 px-6 text-center">
+  <div class="max-w-screen-lg mx-auto">
+    <h2 class="text-4xl font-extrabold italic text-white mb-2">FAQ</h2>
+    <p  class="text-sm text-white mb-12">ーよくある質問ー</p>
 
     <!-- accordion -->
     <div class="space-y-4 text-left">
       <!-- item -->
-      <div x-data="{open:false}" class="border-b pb-4">
+      <div x-data="{open:false}" class="border-b border-white/40 pb-4">
         <button @click="open=!open" class="w-full flex justify-between items-center text-lg font-bold">
           <span>Q. 再入場はできますか？</span>
           <span x-text="open ? '－' : '＋'"></span>
@@ -348,7 +342,7 @@
         <div x-show="open" class="mt-2 text-sm leading-relaxed">A. できます。</div>
       </div>
 
-      <div x-data="{open:false}" class="border-b pb-4">
+      <div x-data="{open:false}" class="border-b border-white/40 pb-4">
         <button @click="open=!open" class="w-full flex justify-between items-center text-lg font-bold">
           <span>Q. 入場にお金はかかりますか？</span>
           <span x-text="open ? '－' : '＋'"></span>
@@ -356,7 +350,7 @@
         <div x-show="open" class="mt-2 text-sm leading-relaxed">A. 一切かかりません。</div>
       </div>
 
-      <div x-data="{open:false}" class="border-b pb-4">
+      <div x-data="{open:false}" class="border-b border-white/40 pb-4">
         <button @click="open=!open" class="w-full flex justify-between items-center text-lg font-bold">
           <span>Q. 交流会から入場しても良いですか？</span>
           <span x-text="open ? '－' : '＋'"></span>
@@ -364,7 +358,7 @@
         <div x-show="open" class="mt-2 text-sm leading-relaxed">A. もちろん、入退場自由です。</div>
       </div>
 
-      <div x-data="{open:false}" class="border-b pb-4">
+      <div x-data="{open:false}" class="border-b border-white/40 pb-4">
         <button @click="open=!open" class="w-full flex justify-between items-center text-lg font-bold">
           <span>Q. 同伴者を連れて行けますか？</span>
           <span x-text="open ? '－' : '＋'"></span>
@@ -376,6 +370,7 @@
     </div>
   </div>
 </section>
+
   
 <!-- 14) FOOTER -->
 <footer class="bg-white text-black py-10 px-6">
