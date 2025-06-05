@@ -263,13 +263,45 @@
 <!-- 13) FAQ -->
 <section id="faq" class="bg-white py-24 px-6">
   <div class="max-w-screen-lg mx-auto text-center">
-    <h2 class="text-4xl font-extrabold italic text-[var(--blue)] mb-2">FAQ</h2>
+    <h2 class="text-4xl font-extrabold italic text-[var(--blue-txt)] mb-2">FAQ</h2>
     <p class="text-sm text-gray-600 mb-12">ーよくある質問ー</p>
-    <div class="space-y-6 text-left text-sm leading-relaxed">
-      <div><p class="font-bold">Q. 再入場はできますか？</p><p>A. できます。</p></div>
-      <div><p class="font-bold">Q. 入場にお金はかかりますか？</p><p>A. 一切かかりません。</p></div>
-      <div><p class="font-bold">Q. 交流会から入場しても良いですか？</p><p>A. もちろん、入退場自由です。</p></div>
-      <div><p class="font-bold">Q. 同伴者を連れて行けますか？</p><p>A. 1社あたり最大3名まで同伴可能です（全員事前登録が必要）。</p></div>
+
+    <!-- accordion -->
+    <div class="space-y-4 text-left">
+      <!-- item -->
+      <div x-data="{open:false}" class="border-b pb-4">
+        <button @click="open=!open" class="w-full flex justify-between items-center text-lg font-bold">
+          <span>Q. 再入場はできますか？</span>
+          <span x-text="open ? '－' : '＋'"></span>
+        </button>
+        <div x-show="open" class="mt-2 text-sm leading-relaxed">A. できます。</div>
+      </div>
+
+      <div x-data="{open:false}" class="border-b pb-4">
+        <button @click="open=!open" class="w-full flex justify-between items-center text-lg font-bold">
+          <span>Q. 入場にお金はかかりますか？</span>
+          <span x-text="open ? '－' : '＋'"></span>
+        </button>
+        <div x-show="open" class="mt-2 text-sm leading-relaxed">A. 一切かかりません。</div>
+      </div>
+
+      <div x-data="{open:false}" class="border-b pb-4">
+        <button @click="open=!open" class="w-full flex justify-between items-center text-lg font-bold">
+          <span>Q. 交流会から入場しても良いですか？</span>
+          <span x-text="open ? '－' : '＋'"></span>
+        </button>
+        <div x-show="open" class="mt-2 text-sm leading-relaxed">A. もちろん、入退場自由です。</div>
+      </div>
+
+      <div x-data="{open:false}" class="border-b pb-4">
+        <button @click="open=!open" class="w-full flex justify-between items-center text-lg font-bold">
+          <span>Q. 同伴者を連れて行けますか？</span>
+          <span x-text="open ? '－' : '＋'"></span>
+        </button>
+        <div x-show="open" class="mt-2 text-sm leading-relaxed">
+          A. 1社あたり最大3名まで同伴可能です（全員事前登録が必要）。
+        </div>
+      </div>
     </div>
   </div>
 </section>
