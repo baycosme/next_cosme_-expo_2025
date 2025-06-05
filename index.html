@@ -7,15 +7,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --blue-main:#13c3eb;    /* EXHIBITIONS 見出しのブルー → 全帯色 */
+      --blue-main:#0066B8;    /* 帯・青セクション背景／見出し */
       --blue-accent:#33C3E6;  /* ホバー／リンク */
       --yellow:#FFCC00;
       --black:#333;
     }
-    body{font-family:'Noto Sans JP',sans-serif;scroll-behavior:smooth;color:var(--black)}
-    h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:.02em}
+    body{font-family:'Noto Sans JP',sans-serif;color:var(--black);scroll-behavior:smooth}
+    h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:.02em;color:var(--blue-main)}
     section{scroll-margin-top:90px}
     #floating-cta{position:fixed;bottom:20px;right:20px;z-index:50;}
+    /* timetable card style */
+    .agenda-card{background:#fff4;border-left:4px solid var(--yellow)}
   </style>
 </head>
 <body class="bg-[#FAFAFA]">
@@ -80,6 +82,7 @@
 <section class="bg-[var(--blue-main)] py-10 text-center text-white">
   <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank" class="inline-block bg-[var(--yellow)] text-black px-12 py-4 rounded-full font-semibold hover:bg-[var(--blue-accent)] transition">来場申し込みはこちら</a>
 </section>
+
   
 <!-- 4) BENEFITS -->
 <section id="benefits" class="bg-white py-24 px-6">
@@ -205,23 +208,57 @@
   
 <!-- 10) TIME SCHEDULE -->
 <section id="schedule" class="bg-white py-24 px-6">
-  <div class="max-w-screen-lg mx-auto text-center">
-    <h2 class="text-4xl font-extrabold italic text-[var(--blue-txt)] mb-2">TIME SCHEDULE</h2>
-    <p class="text-sm text-gray-600 mb-12">ータイムスケジュールー</p>
-    <div class="text-left space-y-4">
-      <p>16:00〜16:05　オープニング基調講演　GMO payment様 ご挨拶</p>
-      <p>16:05〜16:45　Session1：生成AIで“売れる処方”をつくる（仮） / 茶圓 将裕</p>
-      <p>16:45〜17:00　休憩・ブース巡り</p>
-      <p>17:00〜17:45　Session2：TikTokライブコマース成功事例（仮） / ByteDance 高倉氏</p>
-      <p>17:45〜18:00　休憩・ブース巡り</p>
-      <p>18:00〜18:45　Session3：コンセプト解説（仮） / 石井賢介</p>
-      <p>18:45〜19:00　休憩・ブース巡り</p>
-      <p>19:00〜19:30　Session4：1配信9000個完売のトップライブコマーサー（仮） / rerere</p>
-      <p>19:30〜21:00　交流会</p>
+  <div class="max-w-screen-lg mx-auto text-left">
+    <h2 class="text-4xl md:text-5xl font-extrabold italic text-center mb-12">TIME SCHEDULE</h2>
+
+    <!-- Agenda cards -->
+    <div class="space-y-8">
+      <div class="agenda-card p-6 rounded-lg shadow flex flex-col md:flex-row md:items-center gap-4">
+        <div class="text-3xl font-bold text-[var(--blue-main)] min-w-[110px]">16:00</div>
+        <div>
+          <p class="text-xl font-bold mb-1">オープニング基調講演</p>
+          <p class="text-sm text-gray-600">GMO payment様 ご挨拶 (〜16:05)</p>
+        </div>
+      </div>
+
+      <div class="agenda-card p-6 rounded-lg shadow flex flex-col md:flex-row md:items-center gap-4">
+        <div class="text-3xl font-bold text-[var(--blue-main)] min-w-[110px]">16:05</div>
+        <div>
+          <p class="text-xl font-bold mb-1">Session1｜生成AIが変える化粧品開発のこれから（仮）</p>
+          <p class="text-sm text-gray-600">〜17:00</p>
+        </div>
+      </div>
+
+      <p class="text-center text-sm text-gray-500">休憩（15分間）</p>
+
+      <div class="agenda-card p-6 rounded-lg shadow flex flex-col md:flex-row md:items-center gap-4">
+        <div class="text-3xl font-bold text-[var(--blue-main)] min-w-[110px]">17:15</div>
+        <div>
+          <p class="text-xl font-bold mb-1">Session2｜販促が激変するSNS最先端潮流（仮）</p>
+          <p class="text-sm text-gray-600">ByteDance 高倉氏 (〜18:00)</p>
+        </div>
+      </div>
+
+      <p class="text-center text-sm text-gray-500">休憩（15分間）</p>
+
+      <div class="agenda-card p-6 rounded-lg shadow flex flex-col md:flex-row md:items-center gap-4">
+        <div class="text-3xl font-bold text-[var(--blue-main)] min-w-[110px]">18:15</div>
+        <div>
+          <p class="text-xl font-bold mb-1">Session3｜激変する小売店の化粧品販売戦略（仮）</p>
+          <p class="text-sm text-gray-600">石井賢介 (〜19:00)</p>
+        </div>
+      </div>
+
+      <div class="agenda-card p-6 rounded-lg shadow flex flex-col md:flex-row md:items-center gap-4">
+        <div class="text-3xl font-bold text-[var(--blue-main)] min-w-[110px]">19:30</div>
+        <div>
+          <p class="text-xl font-bold mb-1">交流会</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
+  
 
 <!-- 11-bis) ACCESS -->
   <section id="access" class="bg-[var(--blue-main)] text-white py-24 px-6">
@@ -288,18 +325,16 @@
 
   
 <!-- 12) PRESENT -->
-<section id="present" class="bg-[var(--blue)] text-white py-24 px-6">
-  <div class="max-w-screen-lg mx-auto text-center">
-    <h2 class="text-4xl font-extrabold italic mb-2">PRESENT</h2>
-    <p class="text-sm mb-6">ー来場者限定特典ー</p>
-    <p class="text-lg font-semibold">Coming Soon</p>
-  </div>
+<section id="present" class="bg-white py-24 px-6 text-center">
+  <h2 class="text-4xl font-extrabold italic mb-2">PRESENT</h2>
+  <p class="text-sm text-gray-600 mb-6">ー来場者限定特典ー</p>
+  <p class="text-xl font-semibold">Coming Soon</p>
 </section>
   
+  
 <!-- 13) FAQ -->
-<section id="faq" class="bg-white py-24 px-6">
-  <div class="max-w-screen-lg mx-auto text-center">
-    <h2 class="text-4xl font-extrabold italic text-[var(--blue-txt)] mb-2">FAQ</h2>
+<section id="faq" class="bg-[var(--blue-main)] text-white py-24 px-6">
+  <h2 class="text-4xl font-extrabold italic text-center mb-12">FAQ</h2>
     <p class="text-sm text-gray-600 mb-12">ーよくある質問ー</p>
 
     <!-- accordion -->
@@ -343,12 +378,12 @@
 </section>
   
 <!-- 14) FOOTER -->
-<footer class="bg-[var(--blue-main)] text-white py-10 px-6">
+<footer class="bg-white text-black py-10 px-6">
   <div class="max-w-screen-lg mx-auto text-center space-y-4 text-sm">
-  
+    
     <p>運営企業：<a href="https://baycosme.com/" target="_blank" rel="noopener" class="underline">株式会社ベイコスメティックス</a></p>
     <p>会場提供：<a href="https://www.gmo.jp/" target="_blank" rel="noopener" class="underline">GMOインターネットグループ</a></p>
-    <p>プライバシーポリシー：<a href="https://baycosme.com/privacy_policy" target="_blank" rel="noopener" class="underline">ベイコスメ</a> / <a href="https://www.gmo.jp/csr/governance/privacy-policy/" target="_blank" rel="noopener" class="underline">GMO</a></p>
+    <p>プライバシーポリシー：<a href="https://baycosme.com/privacy_policy" target="_blank" rel="noopener" class="underline">ベイコスメティックス</a> / <a href="https://www.gmo.jp/csr/governance/privacy-policy/" target="_blank" rel="noopener" class="underline">GMO</a></p>
     <p class="text-xs">© 2025 BAY COSMETICS Co., Ltd.</p>
   </div>
 </footer>
