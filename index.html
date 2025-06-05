@@ -7,19 +7,15 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --blue-bg:#008ECF;   /* 帯・ブルーセクション背景 */
-      --blue-txt:#0066B8;  /* 見出しテキスト */
-      --yellow:#FFCC00;
-      --black:#333;
-    }
+    :root{--blue:#0070CC;--yellow:#FFCC00;--black:#333}
     body{font-family:'Noto Sans JP',sans-serif;scroll-behavior:smooth;color:var(--black)}
     h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:.02em}
-    section{scroll-margin-top:90px}
+    section{scroll-margin-top:80px}
     #floating-cta{position:fixed;bottom:20px;right:20px;z-index:50;}
   </style>
 </head>
 <body class="bg-[#FAFAFA]">
+
 
 <!-- ===== GLOBAL NAV ===== -->
 <header class="w-full fixed top-0 left-0 bg-white/90 backdrop-blur shadow z-50">
@@ -33,11 +29,11 @@
     </nav>
   </div>
 </header>
-
-<!-- ===== KV ===== -->
+  
+  
+<!-- 1) KV -->
 <section id="kv" class="relative pt-28">
   <img src="KV_back.png" class="absolute inset-0 w-full h-full object-cover opacity-50" alt="KV">
-
   <div class="relative z-10 py-12 md:py-16 px-4 flex flex-col md:flex-row md:items-center md:justify-center gap-8">
     <!-- Main Title -->
     <div class="text-[#1F1F1F] font-extrabold italic leading-none text-center md:text-right">
@@ -61,8 +57,9 @@
   </div>
 </section>
 
-
-  <!-- 2) ABOUT -->
+  
+  
+<!-- 2) ABOUT -->
 <section id="about" class="bg-white py-24 px-6">
   <div class="max-w-screen-lg mx-auto text-center">
     <h2 class="text-5xl font-extrabold italic text-[var(--blue)] mb-4">NEXT COSMETIC EXPO 2025</h2>
@@ -71,255 +68,123 @@
     <p class="text-base leading-relaxed max-w-4xl mx-auto">コスメの“開発・成分・拡散”を圧倒的に短縮する <span class="font-bold">“全方位トレンド”体験型EXPO</span> です。OEMを乗り換えたいブランド担当者も、異業種から参入を狙う企業も、ここに来れば、化粧品ビジネスの<span class="font-semibold">“勝てるヒント”</span>が即手の内に。</p>
   </div>
 </section>
-
-  <!-- 3) CTA -->
+  
+<!-- 3) CTA -->
 <section class="bg-[var(--blue)] py-10 text-center text-white">
   <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank" rel="noopener" class="inline-block bg-[var(--yellow)] text-black px-10 py-4 rounded-full font-semibold hover:opacity-90 transition">来場申し込みはこちら</a>
 </section>
-
-
-<!-- 4) BENEFITS / PICK UP -->
+  
+<!-- 4) BENEFITS -->
 <section id="benefits" class="bg-white py-24 px-6">
   <div class="max-w-screen-lg mx-auto text-center">
-    <h2 class="text-4xl font-extrabold italic text-[var(--blue)] mb-2">BENEFITS</h2>
+    <h2 class="text-4xl font-extrabold italic text-[var(--blue)] mb-2">PICK UP</h2>
     <p class="text-sm text-gray-600 mb-12">ー来場メリットー</p>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
-      <!-- card comp function repeated -->
-      <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center"><h4 class="text-xs font-semibold text-[var(--blue)] mb-1">POINT 1</h4><h3 class="text-2xl font-extrabold mb-3">生成AI</h3><img src="ai.jpg" alt="AI" class="w-full h-48 object-cover mb-4 rounded"><p class="text-sm leading-relaxed">キーワード入力→瞬時に化粧品アイデア＋コンセプト設計＋処方開発まで5分で完成。試作リードタイムを約3か月短縮。</p></div>
-      <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center"><h4 class="text-xs font-semibold text-[var(--blue)] mb-1">POINT 2</h4><h3 class="text-2xl font-extrabold mb-3">販促攻略</h3><img src="SNS.jpg" alt="SNS" class="w-full h-48 object-cover mb-4 rounded"><p class="text-sm leading-relaxed">TikTok Shop攻略！ByteDanceシニアマネージャー“〇〇氏”と1配信1億円売上の“rerere氏”が徹底対談。</p></div>
-      <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center"><h4 class="text-xs font-semibold text-[var(--blue)] mb-1">POINT 3</h4><h3 class="text-2xl font-extrabold mb-3">コンセプト設計</h3><img src="concept.jpg" alt="Concept" class="w-full h-48 object-cover mb-4 rounded"><p class="text-sm leading-relaxed">時代に左右されない“普遍的”に刺さるコンセプト設計手法を特別解説。商品開発で迷う時間をゼロに。</p></div>
-      <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center"><h4 class="text-xs font-semibold text-[var(--blue)] mb-1">POINT 4</h4><h3 class="text-2xl font-extrabold mb-3">小売攻略（仮）</h3><img src="retail.jpg" alt="Retail" class="w-full h-48 object-cover mb-4 rounded"><p class="text-sm leading-relaxed">オンライン販売のみならず、ドラッグストア・バラエティショップ展開を見据えた戦略を紹介。</p></div>
+    <div class="grid md:grid-cols-3 gap-12">
+      <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center"><h4 class="text-xs font-semibold text-[var(--blue)] mb-1">POINT 1</h4><h3 class="text-2xl font-extrabold mb-3">生成AI</h3><img src="ai.jpg" alt="AI" class="w-full h-48 object-cover mb-4 rounded"><p class="text-sm leading-relaxed">キーワード入力→瞬時に化粧品アイデア＋コンセプト設計＋処方開発まで5分で完成。試作リードタイムを約3か月短縮。</p></div>
+      <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center"><h4 class="text-xs font-semibold text-[var(--blue)] mb-1">POINT 2</h4><h3 class="text-2xl font-extrabold mb-3">SNS</h3><img src="SNS.jpg" alt="SNS" class="w-full h-48 object-cover mb-4 rounded"><p class="text-sm leading-relaxed">TikTok Shop攻略！ByteDanceシニアマネージャー“〇〇氏”と1配信1億円売上の“rerere氏”が徹底対談。</p></div>
+      <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center"><h4 class="text-xs font-semibold text-[var(--blue)] mb-1">POINT 3</h4><h3 class="text-2xl font-extrabold mb-3">コンセプト設計</h3><img src="concept.jpg" alt="Concept" class="w-full h-48 object-cover mb-4 rounded"><p class="text-sm leading-relaxed">時代に左右されない“普遍的”に刺さるコンセプト設計手法を特別解説。商品開発で迷う時間をゼロに。</p></div>
     </div>
   </div>
 </section>
   
+<!-- 5) EVENT SUMMARY -->
+<section id="summary" class="bg-[var(--blue)] text-white py-24 px-6">
+  <div class="max-w-screen-lg mx-auto text-center">
+    <h2 class="text-4xl font-extrabold italic mb-2">EVENT SUMMARY</h2>
+    <p class="text-sm mb-12">ーイベント開催概要ー</p>
+    <div class="grid md:grid-cols-2 gap-8 text-left text-sm leading-relaxed">
+      <div class="space-y-2"><p><span class="font-bold">開催日程：</span>2025年6月30日(月) 16:00–19:30（交流会19:30〜）</p><p><span class="font-bold">会場：</span>GMOインターネットグループ 第２本社 GMO Yours・フクラス 16F（渋谷）</p><p><span class="font-bold">内容：</span>セミナー3枠 / 展示ブース（生成AI・量的調査パネル）</p><p><span class="font-bold">参加人数：</span>抽選150名限定</p><p><span class="font-bold">入場料：</span>無料（事前申込でスムーズ入場）</p></div>
+      <div class="space-y-2"><p><span class="font-bold">来場特典：</span>Coming Soon</p><p><span class="font-bold">アクセス：</span>JR渋谷駅西口徒歩1分 / 地下鉄B5出口直結</p><p><span class="font-bold">会場提供：</span>GMOインターネットグループ</p><p><span class="font-bold">注意事項：</span>入館カード紛失にご注意ください。他詳細は申込メールをご確認ください。</p><p><span class="font-bold">禁止事項：</span>差別・ハラスメント・政治活動等、一切禁止。</p></div>
+    </div>
+  </div>
+</section>
   
-<!-- ===== EVENT SUMMARY ===== -->
-<section id="summary" class="bg-[var(--blue-bg)] text-white py-20 px-6">
-  <div class="max-w-screen-lg mx-auto text-center">
-    <h2 class="text-5xl font-extrabold italic mb-3">EVENT SUMMARY</h2>
-    <p class="text-lg mb-12">ーイベント開催概要ー</p>
-
-    <div class="grid md:grid-cols-2 gap-y-10 gap-x-12 text-lg leading-relaxed">
-      <div class="font-bold">開催日程</div><div>2025年6月30日(月) 16:00–19:30（交流会19:30〜）</div>
-      <div class="font-bold">会場</div><div>GMO フクラス</div>
-      <div class="font-bold">イベント内容</div><div>セミナー：3枠 / 展示ブース：生成AI、量的調査結果</div>
-      <div class="font-bold">参加人数</div><div>抽選150名限定</div>
-      <div class="font-bold">入場料</div><div>無料（事前申込でスムーズ入場）</div>
-      <div class="font-bold">来場特典</div><div>Coming Soon</div>
-      <div class="font-bold">アクセス</div><div>JR渋谷駅西口徒歩1分 / 地下鉄B5出口直結</div>
-      <div class="font-bold">会場提供</div><div class="flex justify-center"><img src="GMOlogo.png" alt="GMO" class="h-6"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== VENUE IMAGES ===== -->
-<section class="bg-white py-16 px-6">
-  <div class="max-w-screen-lg mx-auto text-center">
-    <h3 class="text-sm text-gray-600 mb-8">会場</h3>
-    <div class="grid md:grid-cols-2 gap-6">
-      <img src="GMO_in.png" class="rounded-lg shadow" alt="GMO In">
-      <img src="GMO_out.png" class="rounded-lg shadow" alt="GMO Out">
-    </div>
-  </div>
-</section>
-
 <!-- 6) CONTENTS -->
 <section id="contents" class="bg-white py-24 px-6">
   <div class="max-w-screen-lg mx-auto text-center">
-    <h2 class="text-4xl font-extrabold italic text-[var(--blue-txt)] mb-2">CONTENTS</h2>
+    <h2 class="text-4xl font-extrabold italic text-[var(--blue)] mb-2">CONTENTS</h2>
     <p class="text-sm text-gray-600 mb-12">ーイベント内容ー</p>
-
-    <div class="grid md:grid-cols-2 gap-10 text-left">
-      <div class="p-6 rounded-xl shadow bg-gray-50">
-        <h3 class="text-2xl font-bold mb-2">展示エリア</h3>
-        <p class="text-sm leading-relaxed">最新情報をキャッチできる企業ブースエリア。化粧品ビジネスを後押しするサービス紹介ブースで、出会いたい企業にきっと出会える。</p>
-      </div>
-      <div class="p-6 rounded-xl shadow bg-gray-50">
-        <h3 class="text-2xl font-bold mb-2">セミナー</h3>
-        <p class="text-sm leading-relaxed">各業界の著名人が登壇する豪華セミナー。ここでしか聞けない話が聞けるセッションを開催。</p>
-      </div>
+    <div class="grid md:grid-cols-2 gap-12 items-start text-left">
+      <div><img src="booth.jpg" alt="Booth" class="w-full rounded-lg mb-4"><h3 class="text-2xl font-bold mb-2">展示エリア</h3><p class="text-sm leading-relaxed">最新情報をキャッチできる企業ブースエリア。化粧品ビジネスを後押しするサービス紹介ブースで、出会いたい企業にきっと出会える。</p></div>
+      <div><img src="GMO_in.png" alt="Seminar" class="w-full rounded-lg mb-4"><h3 class="text-2xl font-bold mb-2">セミナー</h3><p class="text-sm leading-relaxed">各業界の著名人が登壇する豪華セミナー。ここでしか聞けない話が聞けるセッションを開催。</p></div>
     </div>
   </div>
 </section>
-
+  
 <!-- 7) CTA -->
 <section class="bg-[var(--blue)] py-10 text-center text-white">
-  <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank" rel="noopener"
-     class="inline-block bg-[var(--yellow)] text-black px-10 py-4 rounded-full font-semibold hover:opacity-90 transition">
-    来場申し込みはこちら
-  </a>
+  <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank" rel="noopener" class="inline-block bg-[var(--yellow)] text-black px-10 py-4 rounded-full font-semibold hover:opacity-90 transition">来場申し込みはこちら</a>
 </section>
-
+  
 <!-- 8) SEMINAR PROGRAM -->
 <section id="seminar" class="bg-white py-24 px-6">
   <div class="max-w-screen-lg mx-auto text-center">
-    <h2 class="text-4xl font-extrabold italic text-[var(--blue-txt)] mb-2">SEMINAR&nbsp;PROGRAM</h2>
+    <h2 class="text-4xl font-extrabold italic text-[var(--blue)] mb-2">SEMINAR PROGRAM</h2>
     <p class="text-sm text-gray-600 mb-12">ーセミナー プログラムー</p>
-
     <div class="space-y-10 text-left">
-      <!-- Session 1 -->
+      <!-- Session Card Template -->
       <div class="grid md:grid-cols-6 gap-6 items-center bg-gray-50 p-6 rounded-lg shadow">
-        <div class="md:col-span-1 flex justify-center">
-          <img src="chaen__sama.png" alt="Session1" class="w-24 h-24 rounded-full object-cover">
-        </div>
+        <div class="md:col-span-1 flex justify-center"><img src="chaen__sama.png" alt="Session1" class="w-24 h-24 rounded-full object-cover"></div>
         <div class="md:col-span-5">
-          <h3 class="font-bold text-[var(--blue-txt)] mb-1">Session1&nbsp;16:05–17:00</h3>
+          <h3 class="font-bold text-[var(--blue)] mb-1">Session1 16:05–17:00</h3>
           <p class="text-xl font-bold mb-1">生成AIで“売れる処方”をつくる（仮）</p>
-          <p class="text-sm text-gray-500 mb-2">株式会社デジライズ　代表取締役&nbsp;茶圓 将裕</p>
+          <p class="text-sm text-gray-500 mb-2">株式会社デジライズ　代表取締役　茶圓 将裕</p>
           <p class="text-sm leading-relaxed">生成AIで“売れる処方”をつくる（仮）</p>
         </div>
       </div>
-
-      <!-- Session 2 -->
       <div class="grid md:grid-cols-6 gap-6 items-center bg-gray-50 p-6 rounded-lg shadow">
-        <div class="md:col-span-1 flex justify-center">
-          <div class="w-24 h-24 rounded-full bg-gray-300 flex items-center justify-center text-xs">Coming<br>Soon</div>
-        </div>
+        <div class="md:col-span-1 flex justify-center"><div class="w-24 h-24 rounded-full bg-gray-300 flex items-center justify-center text-xs">Coming<br>Soon</div></div>
         <div class="md:col-span-5">
-          <h3 class="font-bold text-[var(--blue-txt)] mb-1">Session2&nbsp;17:15–18:00</h3>
+          <h3 class="font-bold text-[var(--blue)] mb-1">Session2 17:15–18:00</h3>
           <p class="text-xl font-bold mb-1">TikTokライブコマース成功事例（仮）</p>
           <p class="text-sm text-gray-500 mb-2">ByteDance 高倉氏 / rerere 氏</p>
           <p class="text-sm leading-relaxed">TikTokライブコマース成功事例（仮）</p>
         </div>
       </div>
-
-      <!-- Session 3 -->
       <div class="grid md:grid-cols-6 gap-6 items-center bg-gray-50 p-6 rounded-lg shadow">
-        <div class="md:col-span-1 flex justify-center">
-          <img src="ISHII.png" alt="ISHII" class="w-24 h-24 rounded-full object-cover">
-        </div>
+        <div class="md:col-span-1 flex justify-center"><img src="ISHII.png" alt="ISHII" class="w-24 h-24 rounded-full object-cover"></div>
         <div class="md:col-span-5">
-          <h3 class="font-bold text-[var(--blue-txt)] mb-1">Session3&nbsp;18:15–19:00</h3>
-          <p class="text-xl font-bold mb-1">小売攻略（仮）</p>
-          <p class="text-sm text-gray-500 mb-2">株式会社MD 代表取締役社長&nbsp;石井賢介</p>
+          <h3 class="font-bold text-[var(--blue)] mb-1">Session3 18:15–19:00</h3>
+          <p class="text-xl font-bold mb-1">コンセプト解説（仮）</p>
+          <p class="text-sm text-gray-500 mb-2">株式会社MD 代表取締役社長 石井賢介</p>
           <p class="text-sm leading-relaxed">コンセプト解説（仮）</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+  
 <!-- 9) EXHIBITIONS -->
 <section id="booth" class="bg-[#F5F5F5] py-24 px-6">
   <div class="max-w-screen-lg mx-auto text-center">
-    <h2 class="text-4xl font-extrabold italic text-[var(--blue-txt)] mb-2">EXHIBITIONS</h2>
+    <h2 class="text-4xl font-extrabold italic text-[var(--blue)] mb-2">EXHIBITIONS</h2>
     <p class="text-sm text-gray-600 mb-12">ー展示ブースー</p>
-
     <div class="grid md:grid-cols-2 gap-8 text-left">
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-bold mb-2">化粧品生成AIデモ</h3>
-        <p class="text-sm leading-relaxed">
-          キーワード入力→瞬時に化粧品アイデア＋コンセプト設計＋処方開発まで5分で完成。
-        </p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-bold mb-2">売れる商品を生むデータ術</h3>
-        <p class="text-sm leading-relaxed">
-          数千人アンケート&N=1インタビュー結果をパネル展示。<br>
-          ヒット要因を“盗める”分析パネル。
-        </p>
-      </div>
+      <div class="bg-white p-6 rounded-lg shadow"><h3 class="text-xl font-bold mb-2">化粧品生成AIデモ</h3><p class="text-sm leading-relaxed">キーワード入力→瞬時に化粧品アイデア＋コンセプト設計＋処方開発まで5分で完成。</p></div>
+      <div class="bg-white p-6 rounded-lg shadow"><h3 class="text-xl font-bold mb-2">売れる商品を生むデータ術</h3><p class="text-sm leading-relaxed">数千人アンケート&N=1インタビュー結果をパネル展示。ヒット要因を“盗める”分析パネル。</p></div>
     </div>
   </div>
 </section>
-
+  
 <!-- 10) TIME SCHEDULE -->
 <section id="schedule" class="bg-white py-24 px-6">
-    <div class="max-w-screen-lg mx-auto">
-      <h2 class="text-4xl font-extrabold italic text-[var(--blue-txt)] text-center mb-2">TIME SCHEDULE</h2>
-      <p class="text-sm text-gray-600 text-center mb-12">ータイムスケジュールー</p>
-
-      <div class="overflow-x-auto">
-        <table class="w-full text-left border-collapse">
-          <thead>
-            <tr class="bg-gray-100 text-sm">
-              <th class="p-3 font-semibold w-28">Time</th>
-              <th class="p-3 font-semibold">Program</th>
-              <th class="p-3 font-semibold">Speaker</th>
-            </tr>
-          </thead>
-          <tbody class="text-sm">
-            <tr class="border-b"><td class="p-3">16:00–16:05</td><td class="p-3">オープニング基調講演 / GMO payment ご挨拶</td><td class="p-3"></td></tr>
-            <tr class="border-b"><td class="p-3">16:05–16:45</td><td class="p-3 font-medium">生成AIで“売れる処方”をつくる（仮）</td><td class="p-3">茶圓 将裕（デジライズ）</td></tr>
-            <tr class="bg-gray-50 border-b"><td class="p-3">16:45–17:00</td><td class="p-3">休憩・ブース巡り</td><td class="p-3"></td></tr>
-            <tr class="border-b"><td class="p-3">17:00–17:45</td><td class="p-3 font-medium">TikTokライブコマース成功事例（仮）</td><td class="p-3">高倉氏（ByteDance）</td></tr>
-            <tr class="bg-gray-50 border-b"><td class="p-3">17:45–18:00</td><td class="p-3">休憩・ブース巡り</td><td class="p-3"></td></tr>
-            <tr class="border-b"><td class="p-3">18:00–18:45</td><td class="p-3 font-medium">コンセプト解説（仮）</td><td class="p-3">石井 賢介（MD）</td></tr>
-            <tr class="bg-gray-50 border-b"><td class="p-3">18:45–19:00</td><td class="p-3">休憩・ブース巡り</td><td class="p-3"></td></tr>
-            <tr class="border-b"><td class="p-3">19:00–19:30</td><td class="p-3 font-medium">1配信9000個完売のトップライブコマーサー（仮）</td><td class="p-3">rerere</td></tr>
-            <tr><td class="p-3">19:30–21:00</td><td class="p-3">交流会</td><td class="p-3"></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-
-<!-- 10-bis) ACCESS -->
-<!-- ----------------- ACCESS (updated) ----------------- -->
-<section id="access" class="bg-[#F5F5F5] py-24 px-6">
-  <div class="max-w-screen-lg mx-auto">
-    <h2 class="text-4xl font-extrabold italic text-[var(--blue-txt)] text-center mb-2">ACCESS</h2>
-    <p class="text-sm text-gray-600 text-center mb-12">ーアクセスー</p>
-
-    <div class="grid md:grid-cols-2 gap-8">
-      <!-- 左: テキストブロック -->
-      <div class="space-y-5 text-sm leading-relaxed">
-        <div>
-          <p class="font-bold">会場</p>
-          <p class="mt-1">GMOインターネットグループ 第２本社<br>GMO Yours・フクラス 16F（渋谷）</p>
-        </div>
-
-        <div>
-          <p class="font-bold">住所</p>
-          <p class="mt-1">〒150-0043 東京都渋谷区道玄坂1丁目2番3号 渋谷フクラス</p>
-        </div>
-
-        <div>
-          <p class="font-bold">電車からのアクセス</p>
-          <p class="mt-1">JR渋谷駅西口徒歩1分 / 地下鉄B5出口直結</p>
-        </div>
-
-        <div>
-          <p class="font-bold">注意事項</p>
-          <p class="mt-1">
-            ・入館カード【ゲストカード(緑のカード)】を紛失、持ち帰らないようにお願いします。<br>
-            ・貴重品の破損・紛失等には責任を負いかねます。各自管理をお願いします。<br>
-            ・お子様をお連れになる場合は目を離さないようご注意ください。<br>
-            ・忘れ物がないようお気をつけください。
-          </p>
-        </div>
-
-        <div>
-          <p class="font-bold">禁止事項</p>
-          <p class="mt-1">
-            性別や年齢、宗教、人種、民族、身体的特徴などに関する差別的言動、<br>
-            及び政治活動を禁止します。
-          </p>
-        </div>
-      </div>
-
-      <!-- 右: Google Map -->
-      <div>
-        <a href="https://maps.app.goo.gl/4MWNX3M4XuG1dqW59" target="_blank" rel="noopener">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5973093832223!2d139.6983828152582!3d35.65917248019995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5b12f6e141%3A0x926d478dc49f0e6b!2z44CSMTUwLTAwNDMg5p2x5Lqs6YO95ZOB5bed55S677yR5LiB55uu77yS77yX4oiS77yR77yR!5e0!3m2!1sja!2sjp!4v1717577777777"
-            width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </a>
-
-        <a href="https://www.gmo.jp/company-profile/access-map/fukuras/"
-           target="_blank" rel="noopener"
-           class="mt-6 block text-center w-full border border-[var(--blue)] rounded-full py-3 text-[var(--blue-txt)] hover:bg-[var(--blue)] hover:text-white transition">
-          渋谷フクラス入館方法
-        </a>
-      </div>
+  <div class="max-w-screen-lg mx-auto text-center">
+    <h2 class="text-4xl font-extrabold italic text-[var(--blue)] mb-2">TIME SCHEDULE</h2>
+    <p class="text-sm text-gray-600 mb-12">ータイムスケジュールー</p>
+    <div class="text-left space-y-4">
+      <p>16:00〜16:05　オープニング基調講演　GMO payment様 ご挨拶</p>
+      <p>16:05〜16:45　Session1：生成AIで“売れる処方”をつくる（仮） / 茶圓 将裕</p>
+      <p>16:45〜17:00　休憩・ブース巡り</p>
+      <p>17:00〜17:45　Session2：TikTokライブコマース成功事例（仮） / ByteDance 高倉氏</p>
+      <p>17:45〜18:00　休憩・ブース巡り</p>
+      <p>18:00〜18:45　Session3：コンセプト解説（仮） / 石井賢介</p>
+      <p>18:45〜19:00　休憩・ブース巡り</p>
+      <p>19:00〜19:30　Session4：1配信9000個完売のトップライブコマーサー（仮） / rerere</p>
+      <p>19:30〜21:00　交流会</p>
     </div>
   </div>
 </section>
-
-
+  
 <!-- 11) PRESENT -->
 <section id="present" class="bg-[var(--blue)] text-white py-24 px-6">
   <div class="max-w-screen-lg mx-auto text-center">
@@ -328,79 +193,29 @@
     <p class="text-lg font-semibold">Coming Soon</p>
   </div>
 </section>
-
+  
 <!-- 12) FAQ -->
 <section id="faq" class="bg-white py-24 px-6">
   <div class="max-w-screen-lg mx-auto text-center">
-    <h2 class="text-4xl font-extrabold italic text-[var(--blue-txt)] mb-2">FAQ</h2>
+    <h2 class="text-4xl font-extrabold italic text-[var(--blue)] mb-2">FAQ</h2>
     <p class="text-sm text-gray-600 mb-12">ーよくある質問ー</p>
-
-    <!-- accordion -->
-    <div class="space-y-4 text-left">
-      <!-- item -->
-      <div x-data="{open:false}" class="border-b pb-4">
-        <button @click="open=!open" class="w-full flex justify-between items-center text-lg font-bold">
-          <span>Q. 再入場はできますか？</span>
-          <span x-text="open ? '－' : '＋'"></span>
-        </button>
-        <div x-show="open" class="mt-2 text-sm leading-relaxed">A. できます。</div>
-      </div>
-
-      <div x-data="{open:false}" class="border-b pb-4">
-        <button @click="open=!open" class="w-full flex justify-between items-center text-lg font-bold">
-          <span>Q. 入場にお金はかかりますか？</span>
-          <span x-text="open ? '－' : '＋'"></span>
-        </button>
-        <div x-show="open" class="mt-2 text-sm leading-relaxed">A. 一切かかりません。</div>
-      </div>
-
-      <div x-data="{open:false}" class="border-b pb-4">
-        <button @click="open=!open" class="w-full flex justify-between items-center text-lg font-bold">
-          <span>Q. 交流会から入場しても良いですか？</span>
-          <span x-text="open ? '－' : '＋'"></span>
-        </button>
-        <div x-show="open" class="mt-2 text-sm leading-relaxed">A. もちろん、入退場自由です。</div>
-      </div>
-
-      <div x-data="{open:false}" class="border-b pb-4">
-        <button @click="open=!open" class="w-full flex justify-between items-center text-lg font-bold">
-          <span>Q. 同伴者を連れて行けますか？</span>
-          <span x-text="open ? '－' : '＋'"></span>
-        </button>
-        <div x-show="open" class="mt-2 text-sm leading-relaxed">
-          A. 1社あたり最大3名まで同伴可能です（全員事前登録が必要）。
-        </div>
-      </div>
+    <div class="space-y-6 text-left text-sm leading-relaxed">
+      <div><p class="font-bold">Q. 再入場はできますか？</p><p>A. できます。</p></div>
+      <div><p class="font-bold">Q. 入場にお金はかかりますか？</p><p>A. 一切かかりません。</p></div>
+      <div><p class="font-bold">Q. 交流会から入場しても良いですか？</p><p>A. もちろん、入退場自由です。</p></div>
+      <div><p class="font-bold">Q. 同伴者を連れて行けますか？</p><p>A. 1社あたり最大3名まで同伴可能です（全員事前登録が必要）。</p></div>
     </div>
   </div>
 </section>
-
 <!-- 13) FOOTER -->
 <footer class="bg-[var(--blue)] text-white py-10 px-6">
-  <div class="max-w-screen-lg mx-auto text-center space-y-4 text-sm">
-    <div class="flex flex-col md:flex-row justify-center items-center gap-6">
-      <a href="https://baycosme.com/" target="_blank" rel="noopener">
-        <img src="baycosmelogo.png" alt="Baycosme Logo" class="h-8 mx-auto">
-      </a>
-      <a href="https://www.gmo.jp/" target="_blank" rel="noopener">
-        <img src="GMOlogo.png" alt="GMO Logo" class="h-6 mx-auto">
-      </a>
-    </div>
-
-    <div class="space-x-4">
-      <a href="https://baycosme.com/privacy_policy" target="_blank" rel="noopener" class="underline">
-        株式会社ベイコスメティックス
-      </a>
-      /
-      <a href="https://www.gmo.jp/csr/governance/privacy-policy/" target="_blank" rel="noopener" class="underline">
-        GMOインターネットグループ
-      </a>
-    </div>
-
+  <div class="max-w-screen-lg mx-auto text-center space-y-2 text-sm">
+    <p>運営企業：<a href="https://baycosme.com/" target="_blank" rel="noopener" class="underline">株式会社ベイコスメティックス</a></p>
+    <p>会場提供：<a href="https://www.gmo.jp/" target="_blank" rel="noopener" class="underline">GMOインターネットグループ</a></p>
+    <p>プライバシーポリシー：<a href="https://baycosme.com/privacy_policy" target="_blank" rel="noopener" class="underline">ベイコスメ</a> / <a href="https://www.gmo.jp/csr/governance/privacy-policy/" target="_blank" rel="noopener" class="underline">GMO</a></p>
     <p class="text-xs">© 2025 BAY COSMETICS Co., Ltd.</p>
   </div>
 </footer>
-
 <!-- 14) Floating CTA -->
 <div id="floating-cta">
   <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank" rel="noopener"
@@ -408,8 +223,5 @@
     来場申し込みはこちら
   </a>
 </div>
-
-<!-- Alpine for accordion -->
-<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </body>
 </html>
