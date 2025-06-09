@@ -37,27 +37,22 @@
   
   
 <!-- 1) KV -->
-<section id="kv" class="relative pt-20">
-  <!-- バナー画像 -->
-  <img src="KVbanner_2.png"
-       alt="KV Banner"
-       class="absolute inset-0 w-full h-full object-cover" />
+<section id="kv" class="relative pt-20 bg-center bg-cover" style="background-image:url('KV_back.png');">
+  <!-- バナーをコンテンツ幅で表示 -->
+  <div class="relative max-w-screen-lg mx-auto px-4">
+    <img src="KVbanner_2.png" alt="KV Banner" class="w-full h-auto" />
 
-  <!-- 大見出し＋CTA -->
-  <div class="relative z-10 flex flex-col items-center md:items-start
-              justify-center min-h-[480px] px-4 text-[#1F1F1F]
-              font-extrabold italic leading-none text-center md:text-left"
-       style="text-shadow:0 3px 6px rgba(255,255,255,.7)">
-    <span class="block text-6xl md:text-7xl lg:text-8xl">NEXT</span>
-    <span class="block text-6xl md:text-7xl lg:text-8xl">COSMETIC</span>
-    <span class="block text-6xl md:text-7xl lg:text-8xl">
-      EXPO <span class="text-3xl md:text-4xl border border-[#1F1F1F] px-3">2025</span>
-    </span>
-
-    <!-- CTA ボタン -->
+    <!-- CTA for PC: バナー内左下（EXPOの下あたり）-->
     <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank"
-       class="mt-8 inline-block bg-[var(--yellow)] text-black font-semibold
-              px-10 py-3 rounded-full shadow hover:bg-[var(--blue-accent)] transition">
+       class="hidden md:inline-block absolute bottom-6 left-6 bg-[var(--yellow)] text-black font-semibold px-10 py-3 rounded-full shadow hover:bg-[var(--blue-accent)] transition">
+      来場申し込みはこちら
+    </a>
+  </div>
+
+  <!-- CTA for Mobile: バナー下に表示 -->
+  <div class="md:hidden text-center mt-6">
+    <a href="https://forms.gle/3zHZGRmFntwef6f89" target="_blank"
+       class="inline-block bg-[var(--yellow)] text-black font-semibold px-10 py-3 rounded-full shadow hover:bg-[var(--blue-accent)] transition">
       来場申し込みはこちら
     </a>
   </div>
