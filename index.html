@@ -37,17 +37,17 @@
   
   
 <!-- 1) KV -->
-<section id="kv" class="relative" style="height:700px">
-  <!-- メインバナー -->
-  <div class="relative z-10 w-full h-full flex items-center justify-center px-4">
-    <img src="KVbanner_2.png"
-         alt="KV Banner"
-         class="max-w-screen-lg w-full object-contain" />
-  </div>
+<!-- ===== KV (banner + 帯) ===== -->
+<section id="kv" class="relative overflow-hidden md:h-[700px]">
+  <!-- 前面バナー：スマホは等比率、PC は h-700 cover -->
+  <img src="KVbanner_2.png"
+       alt="KV Banner"
+       class="w-full h-auto md:h-full object-contain md:object-cover" />
 </section>
 
-<!-- KV 直下の帯画像（横幅はバナーと同じ 100%）-->
+<!-- KV 直下の帯画像（バナーと同幅）-->
 <img src="obi.png" alt="帯画像" class="w-full object-cover" />
+
 
   
   
